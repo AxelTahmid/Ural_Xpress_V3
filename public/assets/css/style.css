@@ -1,0 +1,70 @@
+:root {
+  --gradient: linear-gradient(
+    45deg,
+    #276399,
+    #0088b5,
+    #00acb8,
+    #00cca3,
+    #93e784,
+    #f9f871
+  );
+  --matgradient: linear-gradient(
+    45deg,
+    #276399,
+    #4f67a6,
+    #7469ae,
+    #976ab1,
+    #b86aae,
+    #d56ba6
+  );
+}
+
+body {
+  /*
+  margin: 0  
+  font-size: 1.125em;
+  line-height: 1.6;;
+  background-repeat: no-repeat; 
+  background-attachment: fixed; */
+  min-height: 100vh;
+  background-image: var(--matgradient);
+  background-size: 400%;
+  background-position: left;
+  animation: bg-animation 20s infinite alternate;
+}
+
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+.form-wrapper {
+  border-radius: 7px;
+}
+.form-wrapper label {
+  font-weight: bold;
+}
+.errors li {
+  list-style: none;
+  width: 100%;
+  text-align: center;
+}
+.errors ul {
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .form-wrapper .text-right {
+    text-align: center !important;
+  }
+
+  .form-wrapper .btn-primary {
+    display: block;
+    margin: 0 auto;
+  }
+}
