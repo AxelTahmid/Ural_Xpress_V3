@@ -1,10 +1,9 @@
-# CodeIgniter 4 Login & Register
-CodeIgniter 4 Login &amp; Register System based on YouTube tutorial 
-> https://www.youtube.com/watch?v=uYX9FLi1BYg&list=PLYogo31AXFBONHR0WjlnhxN4ulRrF98aA
+# Ural Xpress Delivery System
+
 ## 1. Setup
 Change .env settings to apply to your environment
 
-## 2. Run migration
+## 2. Run migration, only for user table
 Open terminal and navigate to your project folder, then run:
 > php spark migrate 
 
