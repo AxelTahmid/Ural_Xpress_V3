@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="/assets/css/bootstrap4/css/bootstrap.css">
   <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/fontawesome_icons_5.15.3/css/all.css">
   <title>Ural Xpress Apps Admin</title>
 
 </head>

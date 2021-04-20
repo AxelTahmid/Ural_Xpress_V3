@@ -25,12 +25,13 @@ body {
   font-size: 1.125em;
   line-height: 1.6;;
   background-repeat: no-repeat; 
-  background-attachment: fixed; */
+  background-attachment: fixed;
   min-height: 100vh;
   background-image: var(--matgradient);
   background-size: 400%;
   background-position: left;
-  animation: bg-animation 20s infinite alternate;
+  animation: bg-animation 20s infinite alternate; */
+  background-color: azure;
 }
 
 @keyframes bg-animation {
@@ -67,4 +68,10 @@ body {
     display: block;
     margin: 0 auto;
   }
+}
+
+.table td,
+.table th {
+  vertical-align: middle;
+  text-align: center;
 }

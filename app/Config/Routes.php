@@ -37,6 +37,10 @@ $routes->match(['get', 'post'], 'register', 'Users::register', ['filter' => 'noa
 $routes->match(['get', 'post'], 'profile', 'Users::profile', ['filter' => 'auth']);
 $routes->get('dashboard', 'Dashboard::index', ['filter' => 'auth']);
 
+$routes->get('view_delivery', 'DeliverySuperAdmin::view_delivery');
+$routes->get('view_merchant', 'MerchantSuperAdmin::view_merchant');
+
+
 /**
  * --------------------------------------------------------------------
  * Additional Routing
