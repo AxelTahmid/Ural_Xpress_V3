@@ -70,8 +70,25 @@ body {
   }
 }
 
-.table td,
-.table th {
+.data-table table td,
+.data-table table th {
   vertical-align: middle;
   text-align: center;
+}
+
+/* dropdown button for User*/
+.dropdown-menu {
+  padding: 0%;
+}
+
+.dropdown-item {
+  padding: 4%;
+  color: #f3f9f7;
+  background-color: #343c44;
+}
+.dropdown-item i {
+  color: #f3f9f7;
+}
+.dropdown-item:hover {
+  background-color: #f3f9f7;
 }

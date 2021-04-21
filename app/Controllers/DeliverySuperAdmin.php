@@ -2,7 +2,8 @@
 
 namespace App\Controllers;
 
-use App\Models\DeliveryModel;
+use App\Models\SuperFunctionsModel;
+
 
 class DeliverySuperAdmin extends BaseController
 {
@@ -17,10 +18,11 @@ class DeliverySuperAdmin extends BaseController
 
     public function view_delivery()
     {
-        $delivery_model = new DeliveryModel();
-        $query = $delivery_model->get()->getResult();
-        echo '<pre>';
-        print_r($query);
-        echo '<pre>';
+        $db = db_connect();
+        $super_model = new SuperFunctionsModel($db);
+        $data['all_delivery'] = $super_model->view_delivery();
+        echo view('templates/header', $data);
+        echo view('delivery/manage_delivery');
+        echo view('templates/footer');
     }
 }

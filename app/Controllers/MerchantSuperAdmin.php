@@ -4,6 +4,9 @@ namespace App\Controllers;
 
 use App\Models\MerchantModel;
 
+use App\Models\SuperFunctionsModel;
+
+
 class MerchantSuperAdmin extends BaseController
 {
     public function index()
@@ -17,8 +20,9 @@ class MerchantSuperAdmin extends BaseController
 
     public function view_merchant()
     {
-        $delivery_model = new MerchantModel();
-        $data['all_merchant'] = $delivery_model->get()->getResult();
+        $db = db_connect();
+        $delivery_model = new SuperFunctionsModel($db);
+        $data['all_merchant'] = $delivery_model->view_merchant();
         // $data = [
         //     'all_merchant' => $delivery_model->paginate(10),
         //     'pager' => $delivery_model->pager,

@@ -2,7 +2,7 @@
     <h1>Manage Marchant</h1>
 </div><!-- /.page-header -->
 
-<div class="merchant-table">
+<div class="data-table">
     <div class="col-xs-12">
         <table id="dynamic-table" class="table table-striped table-bordered table-hover ">
             <thead class="thead-dark">
@@ -51,6 +51,5 @@
 
 
         </table>
-    </div>
-</div><!-- /.span -->
+    </div><!-- /.span -->
 </div><!-- /.row -->
