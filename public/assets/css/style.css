@@ -31,7 +31,7 @@ body {
   background-size: 400%;
   background-position: left;
   animation: bg-animation 20s infinite alternate; */
-  background-color: azure;
+  background-color: #7469ae38;
 }
 
 @keyframes bg-animation {
@@ -70,8 +70,8 @@ body {
   }
 }
 
-#dynamic-table td,
-#dynamic-table th {
+#dynamicTable td,
+#dynamicTable th {
   vertical-align: middle;
   text-align: center;
 }
@@ -91,4 +91,8 @@ body {
 }
 .dropdown-item:hover {
   background-color: #f3f9f7;
+}
+
+.add_button {
+  padding: 2%;
 }

@@ -1,11 +1,11 @@
-<div class="container">
+<div class="container box">
     <div class="page-header">
         <h1>Manage Delivery</h1>
     </div><!-- /.page-header -->
 
     <div class="row">
         <div class="col-xs-12">
-            <table id="dynamic-table" class="table table-striped table-bordered table-hover ">
+            <table id="dynamicTable" class="table table-striped table-bordered table-hover ">
                 <thead class="thead-dark">
                     <tr>
                         <th scope="col">Id</th>
@@ -47,8 +47,8 @@
                             <td><?php echo $deliveries->publication_status; ?></td>
 
                             <td>
-                                <button type="button" class="btn btn-success"><i class="fas fa-edit"></i></button>
-                                <button type="button" class="btn btn-danger"><i class="far fa-trash-alt"></i></button>
+                                <button type="button" class="btn btn-success btn-sm"><i class="fas fa-edit"></i></button>
+                                <button type="button" class="btn btn-danger btn-sm"><i class="far fa-trash-alt"></i></button>
                             </td>
 
                         <?php } ?>

@@ -6,8 +6,11 @@
   <title>Ural Xpress Apps Admin</title>
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet" />
   <link rel="stylesheet" href="/assets/css/bootstrap4/css/bootstrap.css">
+  <link rel="stylesheet" href="/assets/DataTables/datatables.css">
+  <script src="/assets/DataTables/datatables.js"></script>
   <link rel="stylesheet" href="/assets/css/style.css">
   <link rel="stylesheet" href="/assets/fontawesome_icons_5.15.3/css/all.css">
+
 
   <script type="text/javascript">
     function delete_confirtmation() {
@@ -34,14 +37,14 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <?php if (session()->get('isLoggedIn')) : ?>
-          <ul class="navbar-nav mr-auto">
+          <ul class="navbar-nav mr-auto ">
             <li class="nav-item <?= ($uri->getSegment(1) == 'dashboard' ? 'active' : null) ?>">
               <a class="nav-link" href="/dashboard">Dashboard</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item <?= ($uri->getSegment(1) == 'view_merchant' ? 'active' : null) ?>">
               <a class="nav-link" href="/view_merchant">Merchant</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item <?= ($uri->getSegment(1) == 'view_delivery' ? 'active' : null) ?> ">
               <a class="nav-link" href="/view_delivery">Delivery</a>
             </li>
           </ul>
@@ -50,10 +53,10 @@
               <i class="fa fa-user fa-fw"></i> <?= session()->get('firstname') ?>
             </button>
             <ul class="dropdown-menu .dropdown-menu-right">
-              <li class="nav-item <?= ($uri->getSegment(1) == 'profile' ? 'active' : null) ?>">
+              <li>
                 <a class="dropdown-item" href="/profile"><i class="fa fa-pencil fa-fw"></i> Profile</a>
               </li>
-              <li class="nav-item">
+              <li>
                 <a class="dropdown-item" href="/logout"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
               </li>
             </ul>

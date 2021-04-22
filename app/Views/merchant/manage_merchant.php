@@ -1,11 +1,16 @@
-<div class="container">
+<div class="container box">
     <div class="page-header">
         <h1>Manage Marchant</h1>
     </div><!-- /.page-header -->
 
+    <div class="d-flex justify-content-end">
+        <a role="button" class="btn btn-outline-dark">Add Merchant</a>
+    </div>
+
+
     <div class="row">
         <div class="col-xs-12">
-            <table id="dynamic-table" class="table table-striped table-bordered table-hover ">
+            <table id="dynamicTable" class="table table-striped table-bordered table-hover ">
                 <thead class="thead-dark">
                     <tr>
                         <th scope="col">Id</th>
@@ -28,10 +33,11 @@
 
                         <tr>
                             <th scope="row" class="center">
-                                <div class="custom-control custom-checkbox">
+                                <!-- <div class="custom-control custom-checkbox">
                                     <input type="checkbox" class="custom-control-input" id="merchant_no_<?php echo (string) $v_merchant->merchant_id ?>">
                                     <label class="custom-control-label" for="merchant_no_<?php echo (string) $v_merchant->merchant_id ?>"><?php echo $v_merchant->merchant_id ?></label>
-                                </div>
+                                </div> -->
+                                <?php echo $v_merchant->merchant_id ?>
                             </th>
                             <td><img style="width:100px; height:100px" src="<?= base_url($v_merchant->merchant_img); ?>" alt="merchant image" /></td>
                             <td><?php echo $v_merchant->merchant_name; ?></td>
