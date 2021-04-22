@@ -70,8 +70,8 @@ body {
   }
 }
 
-.data-table table td,
-.data-table table th {
+#dynamic-table td,
+#dynamic-table th {
   vertical-align: middle;
   text-align: center;
 }

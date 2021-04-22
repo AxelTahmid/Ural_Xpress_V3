@@ -28,4 +28,10 @@ class SuperFunctionsModel
         $data = $builder->get()->getResult();
         return $data;
     }
+
+    function delete_merchant($id)
+    {
+        return $this->db->table('ux_merchant')
+            ->delete(['merchant_id' => $id]);
+    }
 }

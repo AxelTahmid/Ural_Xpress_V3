@@ -2,8 +2,6 @@
 
 namespace App\Controllers;
 
-use App\Models\MerchantModel;
-
 use App\Models\SuperFunctionsModel;
 
 
@@ -27,12 +25,16 @@ class MerchantSuperAdmin extends BaseController
         //     'all_merchant' => $delivery_model->paginate(10),
         //     'pager' => $delivery_model->pager,
         // ];
-
-        // echo '<pre>';
-        // print_r($data);
-        // echo '<pre>';
         echo view('templates/header');
         echo view('merchant/manage_merchant', $data);
         echo view('templates/footer');
+    }
+
+    public function delete_merchant($id)
+    {
+        $db = db_connect();
+        $delivery_model = new SuperFunctionsModel($db);
+        $delivery_model->delete_merchant($id);
+        return redirect()->to('/view_merchant');
     }
 }
