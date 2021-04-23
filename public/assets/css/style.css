@@ -1,48 +1,6 @@
-:root {
-  --gradient: linear-gradient(
-    45deg,
-    #276399,
-    #0088b5,
-    #00acb8,
-    #00cca3,
-    #93e784,
-    #f9f871
-  );
-  --matgradient: linear-gradient(
-    45deg,
-    #276399,
-    #4f67a6,
-    #7469ae,
-    #976ab1,
-    #b86aae,
-    #d56ba6
-  );
-}
-
 body {
-  /*
-  margin: 0  
-  font-size: 1.125em;
-  line-height: 1.6;;
-  background-repeat: no-repeat; 
-  background-attachment: fixed;
-  min-height: 100vh;
-  background-image: var(--matgradient);
-  background-size: 400%;
-  background-position: left;
-  animation: bg-animation 20s infinite alternate; */
   background-color: #7469ae38;
 }
-
-@keyframes bg-animation {
-  0% {
-    background-position: left;
-  }
-  100% {
-    background-position: right;
-  }
-}
-
 .form-wrapper {
   border-radius: 7px;
 }
@@ -95,4 +53,17 @@ body {
 
 .add_button {
   padding: 2%;
+}
+
+.container {
+  max-width: 95%;
+}
+.box {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 1.5%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 25px;
 }

@@ -1,9 +1,14 @@
 <div class="container box">
-    <div class="page-header">
-        <h1>Manage Delivery</h1>
+    <div class="page-header d-flex justify-content-center">
+        <h1>Manage Delivery</h1> <br />
     </div><!-- /.page-header -->
 
-    <div class="row">
+    <div class="d-flex justify-content-end">
+        <a role="button" class="btn btn-outline-dark">Add Delivery</a>
+    </div><br />
+    <div id="alert_message"></div>
+
+    <div class="table-responsive">
         <div class="col-xs-12">
             <table id="dynamicTable" class="table table-striped table-bordered table-hover ">
                 <thead class="thead-dark">

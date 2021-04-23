@@ -1,16 +1,17 @@
+<!-- on button click add and edit have the same form show up with different conditions to add or edit -->
 <div class="container box">
-    <div class="page-header">
-        <h1>Manage Marchant</h1>
+    <div class="page-header d-flex justify-content-center">
+        <h1>Manage Marchant</h1> <br />
     </div><!-- /.page-header -->
 
     <div class="d-flex justify-content-end">
-        <a role="button" class="btn btn-outline-dark">Add Merchant</a>
-    </div>
+        <a href="<?= base_url('add_form'); ?>" role="button" class="btn btn-outline-dark">Add Merchant</a>
+    </div><br />
+    <div id="alert_message"></div>
 
-
-    <div class="row">
+    <div class="table-responsive">
         <div class="col-xs-12">
-            <table id="dynamicTable" class="table table-striped table-bordered table-hover ">
+            <table id="dynamicTable" class="table table-striped table-bordered table-hover table-sm ">
                 <thead class="thead-dark">
                     <tr>
                         <th scope="col">Id</th>
@@ -32,14 +33,10 @@
                     ?>
 
                         <tr>
-                            <th scope="row" class="center">
-                                <!-- <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="merchant_no_<?php echo (string) $v_merchant->merchant_id ?>">
-                                    <label class="custom-control-label" for="merchant_no_<?php echo (string) $v_merchant->merchant_id ?>"><?php echo $v_merchant->merchant_id ?></label>
-                                </div> -->
+                            <th scope="row">
                                 <?php echo $v_merchant->merchant_id ?>
                             </th>
-                            <td><img style="width:100px; height:100px" src="<?= base_url($v_merchant->merchant_img); ?>" alt="merchant image" /></td>
+                            <td><img style="width:100px; height:100px" src="<?php echo $v_merchant->merchant_img; ?>" alt="merchant image" /></td>
                             <td><?php echo $v_merchant->merchant_name; ?></td>
                             <td><?php echo $v_merchant->merchant_phone; ?></td>
                             <td><?php echo $v_merchant->merchant_email; ?></td>
@@ -49,13 +46,13 @@
                             <td><?php echo $v_merchant->merchant_pickup_area; ?></td>
                             <td>
                                 <a role="button" class="btn btn-success btn-sm"><i class="fas fa-edit"></i></a>
-                                <a href="delete_merchant/<?php echo $v_merchant->merchant_id; ?>" class="btn btn-danger btn-sm" role="button" title="Delete" onclick="return delete_confirtmation();">
+                                <a href="delete_merchant/<?php echo $v_merchant->merchant_id; ?>" class="btn btn-danger btn-sm" role="button" onclick="return delete_confirtmation();">
                                     <i class="far fa-trash-alt"></i>
                                 </a>
 
                             </td>
-
-                        <?php } ?>
+                        </tr>
+                    <?php } ?>
                 </tbody>
 
 
