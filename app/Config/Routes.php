@@ -43,6 +43,7 @@ $routes->get('delete_merchant/(:num)', 'MerchantSuperAdmin::delete_merchant/$1')
 
 $routes->match(['get', 'post'], 'edit_merchant/(:num)', 'MerchantSuperAdmin::edit_merchant/$1');
 $routes->match(['get', 'post'], 'add_form', 'MerchantSuperAdmin::add_merchant');
+$routes->match(['get', 'post'], 'create_invoice', 'DeliverySuperAdmin::create_invoice');
 
 
 

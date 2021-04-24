@@ -15,14 +15,6 @@ class SuperFunctionsModel
     }
 
     //Method chaining has been used with query builder class. available by default in CI4
-
-    function view_delivery()
-    {
-        return $this->db->table('ux_delivery')
-            ->join('ux_recipient', 'ux_delivery.delivery_recipient_id = ux_recipient.recipient_id ')
-            ->get()->getResult();
-    }
-
     //equivalent to SELECT * FROM 'ux_merchant'
     function get_all_merchant()
     {
@@ -50,5 +42,27 @@ class SuperFunctionsModel
     function add_merchant($data)
     {
         return  $this->db->table('ux_merchant')->insert($data);
+    }
+
+
+    //Delivery Methods
+    function fetch_all_delivery()
+    {
+        return $this->db->table('ux_delivery')
+            ->join('ux_recipient', 'ux_delivery.delivery_recipient_id = ux_recipient.recipient_id ')
+            ->get()->getResult();
+    }
+
+    function fetch_delivery_by_id($id)
+    {
+    }
+    function delete_delivery_by_id($id)
+    {
+    }
+    function update_delivery_by_id($id)
+    {
+    }
+    function add_delivery()
+    {
     }
 }

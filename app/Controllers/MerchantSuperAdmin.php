@@ -3,12 +3,12 @@
 namespace App\Controllers;
 
 use App\Models\SuperFunctionsModel;
-use App\Models\MerchantModel;
-
 
 class MerchantSuperAdmin extends BaseController
 {
-
+    function __construct()
+    {
+    }
     public function add_merchant()
     {
 
