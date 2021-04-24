@@ -40,6 +40,8 @@ $routes->get('dashboard', 'Dashboard::index', ['filter' => 'auth']);
 $routes->get('view_delivery', 'DeliverySuperAdmin::view_delivery');
 $routes->get('view_merchant', 'MerchantSuperAdmin::view_merchant');
 $routes->get('delete_merchant/(:num)', 'MerchantSuperAdmin::delete_merchant/$1');
+
+$routes->match(['get', 'post'], 'edit_merchant/(:num)', 'MerchantSuperAdmin::edit_merchant/$1');
 $routes->match(['get', 'post'], 'add_form', 'MerchantSuperAdmin::add_merchant');
 
 

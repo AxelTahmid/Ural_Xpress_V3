@@ -29,6 +29,11 @@ class SuperFunctionsModel
         return $this->db->table('ux_merchant')->get()->getResult();
     }
 
+    function get_merchant_by_id($id)
+    {
+        return $this->db->table('ux_merchant')->where('merchant_id', $id)->get()->getRow();
+    }
+
     //pass primary key as id for delete
     function delete_merchant_by_id($id)
     {
@@ -38,7 +43,7 @@ class SuperFunctionsModel
     //need to pass the primary key as id and data array to update table
     function update_merchant_by_id($id, $data)
     {
-        $query = $this->db->table('ux_merchant')->where('merchant_id', $id)->update($data);
+        return $this->db->table('ux_merchant')->where('merchant_id', $id)->update($data);
     }
 
     //pass data array as params to add new merchant

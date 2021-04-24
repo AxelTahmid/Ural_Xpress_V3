@@ -1,7 +1,7 @@
 <!-- on button click add and edit have the same form show up with different conditions to add or edit -->
 <div class="container box">
     <div class="page-header d-flex justify-content-center">
-        <h1>Manage Marchant</h1> <br />
+        <h1>Manage Merchant</h1> <br />
     </div><!-- /.page-header -->
 
     <div class="d-flex justify-content-end">
@@ -45,8 +45,10 @@
                             <td><?php echo $v_merchant->merchant_pickup_address; ?></td>
                             <td><?php echo $v_merchant->merchant_pickup_area; ?></td>
                             <td>
-                                <a role="button" class="btn btn-success btn-sm"><i class="fas fa-edit"></i></a>
-                                <a href="delete_merchant/<?php echo $v_merchant->merchant_id; ?>" class="btn btn-danger btn-sm" role="button" onclick="return delete_confirtmation();">
+                                <a href="<?= base_url('edit_merchant/' . $v_merchant->merchant_id) ?>" class="btn btn-success btn-sm" role="button">
+                                    <i class="fas fa-edit"></i>
+                                </a>
+                                <a href="<?= base_url('delete_merchant/' . $v_merchant->merchant_id) ?>" class="btn btn-danger btn-sm" role="button" onclick="return delete_confirtmation();">
                                     <i class="far fa-trash-alt"></i>
                                 </a>
 
