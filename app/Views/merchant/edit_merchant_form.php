@@ -9,7 +9,7 @@
                         </a>
                     </div>
                     <div class="col-12 col-sm-10">
-                        <h3 class="text-left">Merchant</h3>
+                        <h3 class="text-left">Edit Merchant</h3>
                     </div>
 
 
