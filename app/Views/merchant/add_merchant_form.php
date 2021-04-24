@@ -15,46 +15,46 @@
 
                 </div>
                 <hr>
-                <form class="" action="<?= base_url('add_form'); ?>" method="post">
+                <form class="" action="<?= base_url('add_form'); ?>" method="post" enctype="multipart/form-data">
                     <div class="row">
-                        <div class="col-12">
-                            <div class="form-group">
-                                <input required type="text" name="image_url" id="" class="form-control" placeholder="Merchant Profile Image URL">
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-6">
-                            <div class="form-group">
-                                <input required type="text" name="mer_name" id="" class="form-control" placeholder="Merchant Name">
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-6">
-                            <div class="form-group">
-                                <input required type="text" name="mer_phone" id="" class="form-control" placeholder="Merchant Phone">
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="form-group">
-                                <input required type="text" name="mer_email" id="" class="form-control" placeholder="Merchant Email">
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-6">
-                            <div class="form-group">
-                                <input required type="text" name="business_name" id="" class="form-control" placeholder="Business Name">
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-6">
-                            <div class="form-group">
-                                <input required type="text" name="business_type" id="" class="form-control" placeholder="Business Type">
-                            </div>
-                        </div>
                         <div class="col-12 col-sm-8">
                             <div class="form-group">
-                                <input required type="text" name="pickup_add" id="" class="form-control" placeholder="Pickup Address">
+                                <input required type="text" name="mer_name" id="" class="form-control" placeholder="Merchant Name"></input>
                             </div>
                         </div>
                         <div class="col-12 col-sm-4">
                             <div class="form-group">
-                                <input required type="text" name="pickup_area" id="" class="form-control" placeholder="Pickup Area">
+                                <input required type="text" name="mer_phone" id="" class="form-control" placeholder="Merchant Phone"></input>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-8">
+                            <div class="form-group">
+                                <input required type="text" name="business_name" id="" class="form-control" placeholder="Business Name"></input>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4">
+                            <div class="form-group">
+                                <input required type="text" name="business_type" id="" class="form-control" placeholder="Business Type"></input>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-8">
+                            <div class="form-group">
+                                <input required type="text" name="pickup_add" id="" class="form-control" placeholder="Pickup Address"></input>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4">
+                            <div class="form-group">
+                                <input required type="text" name="pickup_area" id="" class="form-control" placeholder="Pickup Area"></input>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <div class="form-group">
+                                <input required type="text" name="mer_email" id="" class="form-control" placeholder="Merchant Email"></input>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <div class="form-group">
+                                <input type="file" name="image_url" class="form-control" placeholder="Profile Image URL" required> </input>
                             </div>
                         </div>
                     </div>

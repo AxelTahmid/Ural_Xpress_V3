@@ -28,15 +28,12 @@
                 </thead>
 
                 <tbody>
-                    <?php
-                    foreach ($all_merchant as $v_merchant) {
-                    ?>
-
+                    <?php foreach ($all_merchant as $v_merchant) : ?>
                         <tr>
                             <th scope="row">
                                 <?php echo $v_merchant->merchant_id ?>
                             </th>
-                            <td><img style="width:100px; height:100px" src="<?php echo $v_merchant->merchant_img; ?>" alt="merchant image" /></td>
+                            <td><img style="width:100px; height:100px" src="<?= base_url('uploads/' . $v_merchant->merchant_img) ?>" alt="merchant image" /></td>
                             <td><?php echo $v_merchant->merchant_name; ?></td>
                             <td><?php echo $v_merchant->merchant_phone; ?></td>
                             <td><?php echo $v_merchant->merchant_email; ?></td>
@@ -54,7 +51,7 @@
 
                             </td>
                         </tr>
-                    <?php } ?>
+                    <?php endforeach; ?>
                 </tbody>
 
 

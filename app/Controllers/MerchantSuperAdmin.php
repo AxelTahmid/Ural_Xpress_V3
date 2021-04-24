@@ -15,8 +15,15 @@ class MerchantSuperAdmin extends BaseController
         if ($this->request->getMethod() == 'post') {
             $db = db_connect();
             $merchant_super_model = new SuperFunctionsModel($db);
+
+            $file = $this->request->getFile('image_url');
+            if ($file->isValid() && !$file->hasMoved()) {
+                $imgName = $file->getRandomName();
+                $file->move('uploads/', $imgName);
+            }
+
             $data = [
-                'merchant_img' => $this->request->getVar('image_url'),
+                'merchant_img' => $imgName,
                 'merchant_name' => $this->request->getVar('mer_name'),
                 'merchant_phone' => $this->request->getVar('mer_phone'),
                 'merchant_email' => $this->request->getVar('mer_email'),
@@ -51,16 +58,24 @@ class MerchantSuperAdmin extends BaseController
     {
         $db = db_connect();
         $merchant_super_model = new SuperFunctionsModel($db);
-        $data['find_merchant'] = $merchant_super_model->get_merchant_by_id($id);
-        echo view('templates/header');
-        echo view('merchant/edit_merchant_form', $data);
-        echo view('templates/footer');
+        $data = $merchant_super_model->get_merchant_by_id($id);
 
         if ($this->request->getMethod() == 'post') {
-            $db = db_connect();
-            $merchant_super_model = new SuperFunctionsModel($db);
+
+            $old_imgName = $data->merchant_id;
+            $file = $this->request->getFile('image_url');
+            if ($file->isValid() && !$file->hasMoved()) {
+                if (file_exists("uploads/" . $old_imgName)) {
+                    unlink("uploads/" . $old_imgName);
+                }
+                $imgName = $file->getRandomName();
+                $file->move('uploads/', $imgName);
+            } else {
+                $imgName = $old_imgName;
+            }
+
             $data = [
-                'merchant_img' => $this->request->getVar('image_url'),
+                'merchant_img' => $imgName,
                 'merchant_name' => $this->request->getVar('mer_name'),
                 'merchant_phone' => $this->request->getVar('mer_phone'),
                 'merchant_email' => $this->request->getVar('mer_email'),
@@ -71,6 +86,11 @@ class MerchantSuperAdmin extends BaseController
             ];
             $merchant_super_model->update_merchant_by_id($id, $data);
             return redirect()->to(base_url('/view_merchant'))->with('status', 'Merchant Updated Successfully~');
+        } else {
+            $found_data['find_merchant'] = $merchant_super_model->get_merchant_by_id($id);
+            echo view('templates/header');
+            echo view('merchant/edit_merchant_form', $found_data);
+            echo view('templates/footer');
         }
     }
 
