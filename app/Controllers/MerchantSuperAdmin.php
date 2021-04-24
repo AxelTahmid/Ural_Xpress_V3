@@ -44,16 +44,6 @@ class MerchantSuperAdmin extends BaseController
         // echo "</pre>";
     }
 
-    public function view_merchant()
-    {
-        $db = db_connect();
-        $merchant_super_model = new SuperFunctionsModel($db);
-        $data['all_merchant'] = $merchant_super_model->get_all_merchant();
-        echo view('templates/header');
-        echo view('merchant/manage_merchant', $data);
-        echo view('templates/footer');
-    }
-
     public function edit_merchant($id)
     {
         $db = db_connect();
@@ -62,7 +52,7 @@ class MerchantSuperAdmin extends BaseController
 
         if ($this->request->getMethod() == 'post') {
 
-            $old_imgName = $data->merchant_id;
+            $old_imgName = $data->merchant_img;
             $file = $this->request->getFile('image_url');
             if ($file->isValid() && !$file->hasMoved()) {
                 if (file_exists("uploads/" . $old_imgName)) {
@@ -98,7 +88,25 @@ class MerchantSuperAdmin extends BaseController
     {
         $db = db_connect();
         $merchant_super_model = new SuperFunctionsModel($db);
+
+        $data = $merchant_super_model->get_merchant_by_id($id);
+        $imgName = $data->merchant_img;
+
+        if (file_exists("uploads/" . $imgName)) {
+            unlink("uploads/" . $imgName);
+        } else {
+        }
         $merchant_super_model->delete_merchant_by_id($id);
-        return redirect()->to(base_url('/view_merchant'))->with('status', 'Merchant Deleted Successfully~');
+        return redirect()->to(base_url('/view_merchant'))->with('status', 'Merchant Record and Photo Deleted Successfully~');
+    }
+
+    public function view_merchant()
+    {
+        $db = db_connect();
+        $merchant_super_model = new SuperFunctionsModel($db);
+        $data['all_merchant'] = $merchant_super_model->get_all_merchant();
+        echo view('templates/header');
+        echo view('merchant/manage_merchant', $data);
+        echo view('templates/footer');
     }
 }
