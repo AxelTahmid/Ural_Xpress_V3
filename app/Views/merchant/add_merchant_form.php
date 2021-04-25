@@ -4,7 +4,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-sm-2">
-                        <a href="view_merchant" class="btn btn btn-outline-dark" role="button">
+                        <a href="<?= base_url('view_merchant') ?>" class="btn btn btn-outline-dark" role="button">
                             <i class="fas fa-chevron-circle-left"></i>
                         </a>
                     </div>
@@ -15,7 +15,7 @@
 
                 </div>
                 <hr>
-                <form class="" action="<?= base_url('add_form'); ?>" method="post" enctype="multipart/form-data">
+                <form class="" action="<?= base_url('add_merchant'); ?>" method="post" enctype="multipart/form-data">
                     <div class="row">
                         <div class="col-12 col-sm-8">
                             <div class="form-group">

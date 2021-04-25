@@ -5,9 +5,8 @@
     </div><!-- /.page-header -->
 
     <div class="d-flex justify-content-end">
-        <a href="<?= base_url('add_form'); ?>" role="button" class="btn btn-outline-dark">Add Merchant</a>
+        <a href="<?= base_url('add_merchant'); ?>" role="button" class="btn btn-outline-dark">Add Merchant</a>
     </div><br />
-    <div id="alert_message"></div>
 
     <div class="table-responsive">
         <div class="col-xs-12">

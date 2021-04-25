@@ -4,9 +4,8 @@
     </div><!-- /.page-header -->
 
     <div class="d-flex justify-content-end">
-        <a role="button" class="btn btn-outline-dark">Add Delivery</a>
+        <a href="<?= base_url('create_invoice'); ?>" role="button" class="btn btn-outline-dark">Create Invoice</a>
     </div><br />
-    <div id="alert_message"></div>
 
     <div class="table-responsive">
         <div class="col-xs-12">
@@ -23,22 +22,17 @@
                         <th scope="col">Delivery Area</th>
                         <th scope="col">Delivery Instructions</th>
                         <th scope="col">Delivery Status</th>
-                        <th scope="col">Published</th>
                         <th scope="col">Actions</th>
                     </tr>
                 </thead>
 
                 <tbody>
                     <?php
-                    foreach ($all_delivery as $deliveries) {
-                    ?>
+                    foreach ($all_delivery as $deliveries) : ?>
 
                         <tr>
-                            <th scope="row" class="center">
-                                <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="merchant_no_<?php echo (string) $deliveries->delivery_id ?>">
-                                    <label class="custom-control-label" for="merchant_no_<?php echo (string) $deliveries->delivery_id ?>"><?php echo $deliveries->delivery_id ?></label>
-                                </div>
+                            <th scope="row">
+                                <?php echo $deliveries->delivery_id ?>
                             </th>
                             <td><?php echo $deliveries->delivery_invoice_no; ?></td>
                             <td><?php echo $deliveries->delivery_invoice_amount; ?></td>
@@ -49,14 +43,17 @@
                             <td><?php echo $deliveries->recipient_area; ?></td>
                             <td><?php echo $deliveries->recipient_instructions; ?></td>
                             <td><?php echo $deliveries->delivery_status; ?></td>
-                            <td><?php echo $deliveries->publication_status; ?></td>
 
                             <td>
-                                <button type="button" class="btn btn-success btn-sm"><i class="fas fa-edit"></i></button>
-                                <button type="button" class="btn btn-danger btn-sm"><i class="far fa-trash-alt"></i></button>
+                                <a href="<?= base_url('edit_invoice/' . $deliveries->delivery_id) ?>" class="btn btn-success btn-sm" role="button">
+                                    <i class="fas fa-edit"></i>
+                                </a>
+                                <a href="<?= base_url('delete_invoice/' . $deliveries->delivery_id) ?>" class="btn btn-danger btn-sm" role="button" onclick="return delete_confirtmation();">
+                                    <i class="far fa-trash-alt"></i>
+                                </a>
                             </td>
 
-                        <?php } ?>
+                        <?php endforeach; ?>
                 </tbody>
 
 

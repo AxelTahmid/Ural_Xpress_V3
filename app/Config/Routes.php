@@ -37,13 +37,17 @@ $routes->match(['get', 'post'], 'register', 'Users::register', ['filter' => 'noa
 $routes->match(['get', 'post'], 'profile', 'Users::profile', ['filter' => 'auth']);
 $routes->get('dashboard', 'Dashboard::index', ['filter' => 'auth']);
 
-$routes->get('view_delivery', 'DeliverySuperAdmin::view_delivery');
+//merchant routes
 $routes->get('view_merchant', 'MerchantSuperAdmin::view_merchant');
 $routes->get('delete_merchant/(:num)', 'MerchantSuperAdmin::delete_merchant/$1');
-
 $routes->match(['get', 'post'], 'edit_merchant/(:num)', 'MerchantSuperAdmin::edit_merchant/$1');
-$routes->match(['get', 'post'], 'add_form', 'MerchantSuperAdmin::add_merchant');
-$routes->match(['get', 'post'], 'create_invoice', 'DeliverySuperAdmin::create_invoice');
+$routes->match(['get', 'post'], 'add_merchant', 'MerchantSuperAdmin::add_merchant');
+
+//delivery routes
+$routes->get('view_delivery', 'DeliverySuperAdmin::view_delivery');
+$routes->match(['get', 'post'], 'create_invoice', 'DeliverySuperAdmin::add_delivery_with_recipient');
+$routes->match(['get', 'post'], 'edit_invoice/(:num)', 'DeliverySuperAdmin::edit_invoice_by_id/$1');
+$routes->get('delete_invoice/(:num)', 'DeliverySuperAdmin::delete_invoice_by_id/$1');
 
 
 

@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use CodeIgniter\Database\ConnectionInterface;
+use CodeIgniter\Database\Query;
 
 class SuperFunctionsModel
 {
@@ -52,17 +53,33 @@ class SuperFunctionsModel
             ->join('ux_recipient', 'ux_delivery.delivery_recipient_id = ux_recipient.recipient_id ')
             ->get()->getResult();
     }
-
-    function fetch_delivery_by_id($id)
+    function get_invoice_by_id($id)
     {
+        return $this->db->table('ux_delivery')
+            ->join('ux_recipient', 'ux_delivery.delivery_recipient_id = ux_recipient.recipient_id ')
+            ->where('delivery_recipient_id', $id)
+            ->get()
+            ->getRow();
     }
-    function delete_delivery_by_id($id)
+    function add_recipient($data)
     {
+        return $this->db->table('ux_recipient')->insert($data);
     }
-    function update_delivery_by_id($id)
+    function add_delivery($data)
     {
+        return $this->db->table('ux_delivery')->insert($data);
     }
-    function add_delivery()
+    function update_recipient_by_id($id, $data)
     {
+        return $this->db->table('ux_recipient')->where('recipient_id', $id)->update($data);
+    }
+    function update_delivery_by_id($id, $data)
+    {
+        return $this->db->table('ux_delivery')->where('delivery_id', $id)->update($data);
+    }
+    function delete_invoice($id)
+    {
+        $this->db->table('ux_recipient')->delete(['recipient_id' => $id]);
+        $this->db->table('ux_delivery')->delete(['delivery_id' => $id]);
     }
 }
