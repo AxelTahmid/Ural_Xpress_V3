@@ -49,7 +49,7 @@
             </li>
           </ul>
           <div class="btn-group open">
-            <button class="btn  btn-outline-light dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            <button class="btn  btn-outline-light dropdown-toggle float-right" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
               <i class="fa fa-user fa-fw"></i> <?= session()->get('firstname') ?>
             </button>
             <ul class="dropdown-menu .dropdown-menu-right">

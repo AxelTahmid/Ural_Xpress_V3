@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 26, 2021 at 01:34 AM
+-- Generation Time: Apr 26, 2021 at 09:32 AM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 7.4.16
 
@@ -65,7 +65,8 @@ CREATE TABLE `ux_delivery` (
 --
 
 INSERT INTO `ux_delivery` (`delivery_id`, `delivery_invoice_no`, `delivery_invoice_amount`, `delivery_recipient_id`, `delivery_payment_status`, `delivery_status`, `publication_status`) VALUES
-(4, 'X2C2B2', '23131', 4, 'Processing', 'Dispatched', 1);
+(4, 'X2C2B2', '23131', 4, 'Processing', 'Dispatched', 1),
+(5, 'X2C2B26', '7465', 5, 'Processing', 'Dispatched', 0);
 
 -- --------------------------------------------------------
 
@@ -124,7 +125,8 @@ CREATE TABLE `ux_recipient` (
 --
 
 INSERT INTO `ux_recipient` (`recipient_id`, `recipient_name`, `recipient_phone`, `recipient_address`, `recipient_area`, `recipient_instructions`) VALUES
-(4, 'Mr Tahmid', '0192312312', 'Rampura', 'Dhaka', 'tomorrow');
+(4, 'Mr Tahmid', '0192312312', 'Rampura', 'Dhaka', 'tomorrow'),
+(5, 'Mr Tamim', '01723424234', 'Badda', 'Badda', 'Tomorrow');
 
 -- --------------------------------------------------------
 
@@ -165,13 +167,16 @@ ALTER TABLE `migrations`
 --
 ALTER TABLE `ux_delivery`
   ADD PRIMARY KEY (`delivery_id`),
+  ADD UNIQUE KEY `delivery_invoice_no` (`delivery_invoice_no`),
   ADD KEY `FK_recipient` (`delivery_recipient_id`);
 
 --
 -- Indexes for table `ux_merchant`
 --
 ALTER TABLE `ux_merchant`
-  ADD PRIMARY KEY (`merchant_id`);
+  ADD PRIMARY KEY (`merchant_id`),
+  ADD UNIQUE KEY `merchant_phone` (`merchant_phone`),
+  ADD UNIQUE KEY `merchant_email` (`merchant_email`);
 
 --
 -- Indexes for table `ux_recipient`
@@ -199,19 +204,19 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT for table `ux_delivery`
 --
 ALTER TABLE `ux_delivery`
-  MODIFY `delivery_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `delivery_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `ux_merchant`
 --
 ALTER TABLE `ux_merchant`
-  MODIFY `merchant_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=120;
+  MODIFY `merchant_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `ux_recipient`
 --
 ALTER TABLE `ux_recipient`
-  MODIFY `recipient_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `recipient_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `ux_super_user`
