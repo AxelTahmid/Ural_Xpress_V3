@@ -3,12 +3,14 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
 <script src="/assets/js/jquery-3.3.1.js"></script>
 <script src="/assets/css/bootstrap4/js/bootstrap.bundle.js"></script>
+<!-- <script src="/assets/js/main.js"></script> -->
 <script src="/assets/DataTables/datatables.js"></script>
 <script type="text/javascript">
     $(document).ready(function() {
         $('#dynamicTable').DataTable();
     });
 </script>
+
 
 </body>
 

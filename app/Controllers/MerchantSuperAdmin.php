@@ -6,9 +6,6 @@ use App\Models\SuperFunctionsModel;
 
 class MerchantSuperAdmin extends BaseController
 {
-    function __construct()
-    {
-    }
     public function add_merchant()
     {
 
@@ -110,3 +107,33 @@ class MerchantSuperAdmin extends BaseController
         echo view('templates/footer');
     }
 }
+
+    // ajax TESTING
+    // public function add_merchant()
+    // {
+    //     $db = db_connect();
+    //     $merchant_super_model = new SuperFunctionsModel($db);
+
+    //     // $file = $this->request->getPost('image_url');
+    //     // if ($file->isValid() && !$file->hasMoved()) {
+    //     //     $imgName = $file->getRandomName();
+    //     //     $file->move('uploads/', $imgName);
+    //     // }
+
+    //     $data = [
+    //         'merchant_img' => $this->request->getPost('merchant_img'),
+    //         'merchant_name' => $this->request->getPost('merchant_name'),
+    //         'merchant_phone' => $this->request->getPost('merchant_phone'),
+    //         'merchant_email' => $this->request->getPost('merchant_email'),
+    //         'merchant_business_name' => $this->request->getPost('merchant_business_name'),
+    //         'merchant_business_type' => $this->request->getPost('merchant_business_type'),
+    //         'merchant_pickup_address' => $this->request->getPost('merchant_pickup_address'),
+    //         'merchant_pickup_area' => $this->request->getPost('merchant_pickup_area'),
+    //     ];
+    //     $merchant_super_model->add_merchant($data);
+    //     //return $this->response->setJSON($data);
+    //     return redirect()->to(base_url('/view_merchant'))->with('status', 'Merchant Added Successfully~');
+    //     // $data = ['status' => 'Merchant Added Sucessfully'];
+    //     // return $this->response->setJSON($data);=
+
+    // }

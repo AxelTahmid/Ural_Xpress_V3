@@ -3,13 +3,14 @@
         <div class="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-3 mt-5 pt-3 pb-3 bg-white from-wrapper">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-sm-2">
-                        <a href="<?= base_url('view_merchant'); ?>" class="btn btn btn-outline-dark" role="button">
-                            <i class="fas fa-chevron-circle-left"></i>
-                        </a>
-                    </div>
-                    <div class="col-12 col-sm-10">
-                        <h3 class="text-left">Edit Merchant</h3>
+                    <div class="col-md-12">
+                        <div class="card card-header">
+                            <h3>Edit Merchant
+                                <a href="<?= base_url('view_merchant'); ?>" role="button" class="btn btn-outline-dark float-right">
+                                    <i class="fas fa-times"></i>
+                                </a>
+                            </h3>
+                        </div><!-- /.page-header -->
                     </div>
 
 

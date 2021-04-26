@@ -90,6 +90,4 @@
       <?php } ?>
     </div>
 
-  <?php else : ?>
-
   <?php endif; ?>
