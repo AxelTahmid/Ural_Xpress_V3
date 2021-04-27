@@ -46,8 +46,11 @@ $routes->match(['get', 'post'], 'add_merchant', 'MerchantSuperAdmin::add_merchan
 //delivery routes
 $routes->get('view_delivery', 'DeliverySuperAdmin::view_delivery');
 $routes->get('delete_invoice/(:num)', 'DeliverySuperAdmin::delete_invoice_by_id/$1');
-$routes->match(['get', 'post'], 'create_invoice', 'DeliverySuperAdmin::add_delivery_with_recipient');
 $routes->match(['get', 'post'], 'edit_invoice/(:num)', 'DeliverySuperAdmin::edit_invoice_by_id/$1');
+
+//delivery ajax routes
+$routes->match(['get', 'post'], 'invoices', 'DeliverySuperAdmin::fetch_invoice');
+$routes->match(['get', 'post'], 'invoice_actions', 'DeliverySuperAdmin::action_invoice');
 
 
 

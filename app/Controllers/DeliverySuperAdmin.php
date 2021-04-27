@@ -3,22 +3,48 @@
 namespace App\Controllers;
 
 use App\Models\SuperFunctionsModel;
-
 use monken\TablesIgniter;
 
 class DeliverySuperAdmin extends BaseController
 {
-
     public function view_delivery()
     {
-        $db = db_connect();
-        $delivery_super_model = new SuperFunctionsModel($db);
-        $data['all_delivery'] = $delivery_super_model->fetch_all_delivery();
         echo view('templates/header');
-        echo view('delivery/manage_delivery', $data);
+        echo view('delivery/manage_delivery');
         echo view('templates/footer');
     }
 
+    public function fetch_invoice()
+    {
+        $db = db_connect();
+        $delivery_super_model = new SuperFunctionsModel($db);
+        // $data['all_delivery'] = $delivery_super_model->fetch_all_delivery();
+        $data_table = new TablesIgniter();
+        $data_table->setTable($delivery_super_model->fetch_all_delivery())
+            ->setDefaultOrder('delivery_id', 'ASC')
+            ->setSearch([
+                'delivery_id',
+                'delivery_invoice_no',
+                'recipient_name',
+                'recipient_phone',
+                'delivery_status',
+                'delivery_payment_status'
+            ])
+            ->setOrder([
+                "delivery_id", "delivery_invoice_no",
+                "delivery_invoice_amount", "delivery_payment_status",
+                "recipient_name", "recipient_phone", "recipient_address",
+                "recipient_area", "recipient_instructions", "delivery_status"
+            ])
+            ->setOutput([
+                "delivery_id", "delivery_invoice_no",
+                "delivery_invoice_amount", "delivery_payment_status",
+                "recipient_name", "recipient_phone", "recipient_address",
+                "recipient_area", "recipient_instructions", "delivery_status"
+            ]);
+
+        return $data_table->getDatatable();
+    }
 
     public function action_invoice()
     {

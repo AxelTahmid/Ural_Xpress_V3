@@ -1,5 +1,13 @@
 $(document).ready(function () {
-  $("#dynamicTable").DataTable({});
+  $("#dynamicTable").DataTable();
+  $("#deliveryTable").DataTable({
+    order: [],
+    serverSide: true,
+    ajax: {
+      url: "/invoices",
+      type: "POST",
+    },
+  });
 
   $("#create_invoice").click(function () {
     $("#deliveryModalForm")[0].reset();
@@ -22,7 +30,7 @@ $(document).ready(function () {
   $("#deliveryModalForm").on("submit", function (event) {
     event.preventDefault();
     $.ajax({
-      url: "/DeliverySuperAdmin/action_invoice",
+      url: "/invoice_actions",
       method: "POST",
       data: $(this).serialize(),
       dataType: "JSON",
@@ -49,7 +57,7 @@ $(document).ready(function () {
         } else {
           $("#deliveryModal").modal("hide");
           $("#err_message").html(data.err_message);
-          $("#dynamicTable").DataTable().reload();
+          $("#deliveryTable").DataTable().ajax.reload();
           setTimeout(function () {
             $("#err_message").html("");
           }, 5000);

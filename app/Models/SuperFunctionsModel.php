@@ -50,8 +50,7 @@ class SuperFunctionsModel
     function fetch_all_delivery()
     {
         return $this->db->table('ux_delivery')
-            ->join('ux_recipient', 'ux_delivery.delivery_recipient_id = ux_recipient.recipient_id ')
-            ->get()->getResult();
+            ->join('ux_recipient', 'ux_delivery.delivery_recipient_id = ux_recipient.recipient_id ');
     }
     function get_invoice_by_id($id)
     {
