@@ -7,7 +7,6 @@
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet" />
   <link rel="stylesheet" href="/assets/fontawesome_icons_5.15.3/css/all.css">
   <link rel="stylesheet" href="/assets/css/bootstrap4/css/bootstrap.css">
-  <script src="/assets/DataTables/datatables.js"></script>
   <link rel="stylesheet" href="/assets/DataTables/datatables.css">
   <link rel="stylesheet" href="/assets/css/style.css">
 

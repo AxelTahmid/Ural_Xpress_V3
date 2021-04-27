@@ -1,17 +1,21 @@
+<?= $this->include('delivery/add_delivery') ?>
+
 <div class="container box">
     <div class="row">
         <div class="col-md-12">
             <div class="card card-header">
-                <h2 class="">Manage Delivery
-                    <a href="<?= base_url('create_invoice'); ?>" role="button" class="btn btn-outline-dark float-right">
+                <h2>Manage Delivery
+                    <button type="button" name="create_invoice" id="create_invoice" class="btn btn-outline-dark float-right"> Create Invoice</button>
+                    <!-- <a href=" base_url('create_invoice');" role="button" class="btn btn-outline-dark float-right" data-toggle="modal" data-target="#deliveryModal">
                         Create Invoice
-                    </a>
+                    </a> -->
                 </h2>
             </div>
         </div>
 
         <div class="col-md-12">
             <br />
+            <span id="err_message"></span>
         </div>
 
         <div class="col-md-12">

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8c49469ea6df972381be63807c7e127d",
+    "content-hash": "8299325aa7696ca66b333f2582ce95c6",
     "packages": [
         {
             "name": "codeigniter4/framework",
@@ -219,6 +219,51 @@
                 "zf"
             ],
             "time": "2020-04-03T16:01:00+00:00"
+        },
+        {
+            "name": "monken/tablesigniter",
+            "version": "v1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/monkenWu/TablesIgniter.git",
+                "reference": "701e9ad7205160df618d4c4833762726dd474095"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/monkenWu/TablesIgniter/zipball/701e9ad7205160df618d4c4833762726dd474095",
+                "reference": "701e9ad7205160df618d4c4833762726dd474095",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "monken\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "monkenWu",
+                    "email": "610877102@mail.nknu.edu.tw"
+                }
+            ],
+            "description": "This library will help you use jQuery Datatables based on CodeIgniter4.",
+            "keywords": [
+                "codeigniter",
+                "codeigniter4",
+                "datatables"
+            ],
+            "support": {
+                "issues": "https://github.com/monkenWu/TablesIgniter/issues",
+                "source": "https://github.com/monkenWu/TablesIgniter/tree/v1.2.0"
+            },
+            "time": "2021-02-25T14:49:35+00:00"
         },
         {
             "name": "psr/log",
@@ -1840,5 +1885,6 @@
     "platform": {
         "php": ">=7.2"
     },
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "2.0.0"
 }
