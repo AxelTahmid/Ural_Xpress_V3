@@ -51,12 +51,21 @@ class SuperFunctionsModel
     {
         return $this->db->table('ux_delivery')
             ->join('ux_recipient', 'ux_delivery.delivery_recipient_id = ux_recipient.recipient_id ');
+        // didnt close query because tableigniter takes builder class only
+    }
+    function edit_button()
+    {
+        $edit_button = function ($id) {
+            return "<button type='button' name='edit_invoice' class='btn btn-success btn-sm edit_invoice' data-id='" . $id['delivery_id'] . "'><i class='fas fa-edit'></i></button>
+                    <button type='button' name='delete_invoice' class='btn btn-danger btn-sm delete_invoice' data-id='" . $id['delivery_id'] . "'><i class='far fa-trash-alt'></i></button>";
+        };
+        return $edit_button;
     }
     function get_invoice_by_id($id)
     {
         return $this->db->table('ux_delivery')
             ->join('ux_recipient', 'ux_delivery.delivery_recipient_id = ux_recipient.recipient_id ')
-            ->where('delivery_recipient_id', $id)
+            ->where('delivery_id', $id)
             ->get()
             ->getRow();
     }

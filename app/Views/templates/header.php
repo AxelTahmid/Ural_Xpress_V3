@@ -44,7 +44,7 @@
               <a class="nav-link" href="/view_merchant">Merchant</a>
             </li>
             <li class="nav-item <?= ($uri->getSegment(1) == 'view_delivery' ? 'active' : null) ?> ">
-              <a class="nav-link" href="/view_delivery">Delivery</a>
+              <a class="nav-link" href="/invoice">Delivery</a>
             </li>
           </ul>
           <div class="btn-group open">

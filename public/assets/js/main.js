@@ -11,7 +11,7 @@ $(document).ready(function () {
 
   $("#create_invoice").click(function () {
     $("#deliveryModalForm")[0].reset();
-    $(".modal-title").text("Create Invoice");
+    $("#deliveryModalLabel").text("Create Invoice");
     $("#recipient_name_err").text("");
     $("#recipient_phone_err").text("");
     $("#delivery_address_err").text("");
@@ -64,6 +64,66 @@ $(document).ready(function () {
         }
       },
     });
+  });
+
+  $(document).on("click", ".edit_invoice", function () {
+    var id = $(this).data("id");
+
+    $.ajax({
+      url: "/invoice_by_id",
+      method: "POST",
+      data: { id: id },
+      dataType: "JSON",
+      success: function (data) {
+        $("#recipient_name").val(data.recipient_name);
+        $("#recipient_phone").val(data.recipient_phone);
+        $("#delivery_address").val(data.recipient_address);
+        $("#delivery_area").val(data.recipient_area);
+        $("#instructions").val(data.recipient_instructions);
+        $("#invoice").val(data.delivery_invoice_no);
+        $("#invoice_amount").val(data.delivery_invoice_amount);
+        $("#deliverystatus").val(data.delivery_status);
+        $("#payment").val(data.delivery_payment_status);
+        $("#publication").val(data.publication_status);
+
+        $("#deliveryModalLabel").text("Edit Invoice");
+
+        $("#recipient_name_err").text("");
+        $("#recipient_phone_err").text("");
+        $("#delivery_address_err").text("");
+        $("#delivery_area_err").text("");
+        $("#instructions_err").text("");
+        $("#invoice_err").text("");
+        $("#invoice_amount_err").text("");
+        $("#deliverystatus_err").text("");
+        $("#payment_err").text("");
+        $("#publication_err").text("");
+
+        $("#action").val("Edit");
+        $("#submit_button").val("Save");
+        $("#deliveryModal").modal("show");
+        // hidden id not going in form data, checked in api
+        $("#hidden_id").val(id);
+      },
+    });
+  });
+
+  $(document).on("click", ".delete_invoice", function () {
+    var id = $(this).data("id");
+    if (confirm("Are you sure you want to delete the invoice?")) {
+      $.ajax({
+        url: "/del_invoice",
+        method: "POST",
+        data: { id: id },
+        success: function (data) {
+          $("#err_message").html(data);
+          $("#deliveryTable").DataTable().ajax.reload();
+          setTimeout(function () {
+            $("#err_message").html("");
+          }, 5000);
+        },
+      });
+    }
   });
 });
 

@@ -1,4 +1,4 @@
-<?= $this->include('delivery/add_delivery') ?>
+<?= $this->include('delivery/actions_delivery') ?>
 
 <div class="container box">
     <div class="row">
@@ -33,6 +33,7 @@
                             <th scope="col">Delivery Area</th>
                             <th scope="col">Delivery Instructions</th>
                             <th scope="col">Delivery Status</th>
+                            <th scope="col">Actions</th>
                         </tr>
                     </thead>
                 </table>
