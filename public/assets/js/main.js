@@ -1,5 +1,13 @@
 $(document).ready(function () {
-  $("#dynamicTable").DataTable();
+  $("#merchantTable").DataTable({
+    order: [],
+    serverSide: true,
+    ajax: {
+      url: "/merchants",
+      type: "POST",
+    },
+  });
+
   $("#deliveryTable").DataTable({
     order: [],
     serverSide: true,
@@ -25,6 +33,22 @@ $(document).ready(function () {
     $("#action").val("Add");
     $("#submit_button").val("Save");
     $("#deliveryModal").modal("show");
+  });
+
+  $("#add_merchant").click(function () {
+    $("#merchantModalForm")[0].reset();
+    $("#merchantModalLabel").text("Register Merchant");
+    $("mer_name_err").text("");
+    $("mer_phone_err").text("");
+    $("business_name_err").text("");
+    $("business_type_err").text("");
+    $("pickup_add_err").text("");
+    $("pickup_area_err").text("");
+    $("mer_email_err").text("");
+    $("image_url_err").text("");
+    $("#action").val("Add");
+    $("#submit_button").val("Save");
+    $("#merchantModal").modal("show");
   });
 
   $("#deliveryModalForm").on("submit", function (event) {
@@ -58,6 +82,49 @@ $(document).ready(function () {
           $("#deliveryModal").modal("hide");
           $("#err_message").html(data.err_message);
           $("#deliveryTable").DataTable().ajax.reload();
+          setTimeout(function () {
+            $("#err_message").html("");
+          }, 5000);
+        }
+      },
+    });
+  });
+
+  $("#merchantModalForm").on("submit", function (event) {
+    event.preventDefault();
+    // if ($("#image_url").val() == "") {
+    //   alert("Please Select the File");
+    //   // $(".btn-success").html("submit");
+    //   // $(".btn-success").prop("enabled");
+    //   document.getElementById("upload_form").reset();
+    // }
+    $.ajax({
+      url: "/merchant_actions",
+      method: "POST",
+      data: $(this).serialize(),
+      dataType: "JSON",
+      beforeSend: function () {
+        $("#submit_button").val("Saving..");
+        $("#submit_button").attr("disabled", "disabled");
+      },
+
+      success: function (data) {
+        $("#submit_button").val("Save");
+        $("#submit_button").attr("disabled", false);
+
+        if (data.error == "yes") {
+          $("#mer_name_err").text(data.mer_name_err);
+          $("#mer_phone_err").text(data.mer_phone_err);
+          $("#business_name_err").text(data.business_name_err);
+          $("#business_type_err").text(data.business_type_err);
+          $("#pickup_add_err").text(data.pickup_add_err);
+          $("#pickup_area_err").text(data.pickup_area_err);
+          $("#mer_email_err").text(data.mer_email_err);
+          $("#image_url_err").text(data.image_url_err);
+        } else {
+          $("#merchantModal").modal("hide");
+          $("#err_message").html(data.err_message);
+          $("#merchantTable").DataTable().ajax.reload();
           setTimeout(function () {
             $("#err_message").html("");
           }, 5000);
@@ -108,6 +175,43 @@ $(document).ready(function () {
     });
   });
 
+  $(document).on("click", ".edit_merchant", function () {
+    var id = $(this).data("id");
+
+    $.ajax({
+      url: "/merchant_by_id",
+      method: "POST",
+      data: { id: id },
+      dataType: "JSON",
+      success: function (data) {
+        $("#mer_name").val(data.merchant_name);
+        $("#mer_phone").val(data.merchant_phone);
+        $("#business_name").val(data.merchant_business_name);
+        $("#business_type").val(data.merchant_business_type);
+        $("#pickup_add").val(data.merchant_pickup_address);
+        $("#pickup_area").val(data.merchant_pickup_area);
+        $("#mer_email").val(data.merchant_email);
+        $("#image_url").val(data.image_url);
+
+        $("#merchantModalLabel").text("Update Merchant Info");
+
+        $("#mer_name_err").text("");
+        $("#mer_phone_err").text("");
+        $("#business_name_err").text("");
+        $("#business_type_err").text("");
+        $("#pickup_add_err").text("");
+        $("#pickup_area_err").text("");
+        $("#mer_email_err").text("");
+        $("#image_url_err").text("");
+
+        $("#action").val("Edit");
+        $("#submit_button").val("Save");
+        $("#merchantModal").modal("show");
+        $("#hidden_id").val(id);
+      },
+    });
+  });
+
   $(document).on("click", ".delete_invoice", function () {
     var id = $(this).data("id");
     if (confirm("Are you sure you want to delete the invoice?")) {
@@ -125,101 +229,26 @@ $(document).ready(function () {
       });
     }
   });
+
+  $(document).on("click", ".delete_merchant", function () {
+    var id = $(this).data("id");
+    if (
+      confirm(
+        "Are you sure you want to delete the Merchant? Action cannot be undone"
+      )
+    ) {
+      $.ajax({
+        url: "/del_merchant",
+        method: "POST",
+        data: { id: id },
+        success: function (data) {
+          $("#err_message").html(data);
+          $("#merchantTable").DataTable().ajax.reload();
+          setTimeout(function () {
+            $("#err_message").html("");
+          }, 5000);
+        },
+      });
+    }
+  });
 });
-
-// $(document).ready(function () {
-//   $(document).on("click", ".ajaxMerchantSave", function () {
-//     // validaton conditonals
-//     if ($.trim($(".mer_name").val()).length == 0) {
-//       error_name = "Please Enter Your Full Name";
-//       $("#error_mer_name").text(error_name);
-//     } else {
-//       error_name = "";
-//       $("#error_mer_name").text(error_name);
-//     }
-//     if ($.trim($(".mer_phone").val()).length == 0) {
-//       error_phone = "Please Enter Your Phone Number";
-//       $("#error_mer_phone").text(error_phone);
-//     } else {
-//       error_phone = "";
-//       $("#error_mer_phone").text(error_phone);
-//     }
-//     if ($.trim($(".business_name").val()).length == 0) {
-//       error_business = "Please Enter Your Business Name";
-//       $("#error_business_name").text(error_business);
-//     } else {
-//       error_business = "";
-//       $("#error_business_name").text(error_business);
-//     }
-//     if ($.trim($(".business_type").val()).length == 0) {
-//       error_type = "Please Enter Your Business Type";
-//       $("#error_business_type").text(error_type);
-//     } else {
-//       error_type = "";
-//       $("#error_business_type").text(error_type);
-//     }
-//     if ($.trim($(".pickup_add").val()).length == 0) {
-//       error_pickup = "Please Enter Your Pickup Address";
-//       $("#error_pickup_add").text(error_pickup);
-//     } else {
-//       error_pickup = "";
-//       $("#error_pickup_add").text(error_pickup);
-//     }
-//     if ($.trim($(".pickup_area").val()).length == 0) {
-//       error_area = "Please Enter Your Pickup Area";
-//       $("#error_pickup_area").text(error_area);
-//     } else {
-//       error_area = "";
-//       $("#error_pickup_area").text(error_area);
-//     }
-//     if ($.trim($(".mer_email").val()).length == 0) {
-//       error_email = "Please Enter Your Email ";
-//       $("#error_mer_email").text(error_email);
-//     } else {
-//       error_email = "";
-//       $("#error_mer_email").text(error_email);
-//     }
-//     if ($.trim($(".image_url").val()).length == 0) {
-//       error_img = "Please Enter Your Image";
-//       $("#error_image_url").text(error_img);
-//     } else {
-//       error_img = "";
-//       $("#error_image_url").text(error_img);
-//     }
-
-//     //inserting ajax
-//     if (
-//       error_name != "" ||
-//       error_phone != "" ||
-//       error_business != "" ||
-//       error_type != "" ||
-//       error_pickup != "" ||
-//       error_area != "" ||
-//       error_email != "" ||
-//       error_img != ""
-//     ) {
-//       return false;
-//     } else {
-//       var data = {
-//         merchant_img: $(".image_url").val(),
-//         merchant_name: $(".mer_name").val(),
-//         merchant_phone: $(".mer_phone").val(),
-//         merchant_email: $(".mer_email").val(),
-//         merchant_business_name: $(".business_name").val(),
-//         merchant_business_type: $(".business_type").val(),
-//         merchant_pickup_address: $(".pickup_add").val(),
-//         merchant_pickup_area: $(".pickup_area").val(),
-//       };
-
-//       $.ajax({
-//         method: "POST",
-//         url: "/add_merchant",
-//         data: data,
-//         success: function (response) {
-//           $("#addMerchantModal").modal("hide");
-//           $("#addMerchantModal").find("input").val("");
-//         },
-//       });
-//     }
-//   });
-// });

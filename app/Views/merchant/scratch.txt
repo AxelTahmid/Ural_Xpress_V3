@@ -1,0 +1,26 @@
+                    <tbody>
+                        <?php foreach ($all_merchant as $v_merchant) : ?>
+                            <tr>
+                                <th scope="row">
+                                    <?php echo $v_merchant->merchant_id ?>
+                                </th>
+                                <td><img style="width:100px; height:100px" src="<?= base_url('uploads/' . $v_merchant->merchant_img) ?>" alt="merchant image" /></td>
+                                <td><?php echo $v_merchant->merchant_name; ?></td>
+                                <td><?php echo $v_merchant->merchant_phone; ?></td>
+                                <td><?php echo $v_merchant->merchant_email; ?></td>
+                                <td><?php echo $v_merchant->merchant_business_name; ?></td>
+                                <td><?php echo $v_merchant->merchant_business_type; ?></td>
+                                <td><?php echo $v_merchant->merchant_pickup_address; ?></td>
+                                <td><?php echo $v_merchant->merchant_pickup_area; ?></td>
+                                <td>
+                                    <a href="<?= base_url('edit_merchant/' . $v_merchant->merchant_id) ?>" class="btn btn-success btn-sm" role="button">
+                                        <i class="fas fa-edit"></i>
+                                    </a>
+                                    <a href="<?= base_url('delete_merchant/' . $v_merchant->merchant_id) ?>" class="btn btn-danger btn-sm" role="button" onclick="return delete_confirtmation();">
+                                        <i class="far fa-trash-alt"></i>
+                                    </a>
+
+                                </td>
+                            </tr>
+                        <?php endforeach; ?>
+                    </tbody>

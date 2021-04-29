@@ -6,9 +6,6 @@
             <div class="card card-header">
                 <h2>Manage Delivery
                     <button type="button" name="create_invoice" id="create_invoice" class="btn btn-outline-dark float-right"> Create Invoice</button>
-                    <!-- <a href=" base_url('create_invoice');" role="button" class="btn btn-outline-dark float-right" data-toggle="modal" data-target="#deliveryModal">
-                        Create Invoice
-                    </a> -->
                 </h2>
             </div>
         </div>

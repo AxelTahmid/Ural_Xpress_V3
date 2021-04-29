@@ -17,9 +17,18 @@ class SuperFunctionsModel
 
     //Method chaining has been used with query builder class. available by default in CI4
     //equivalent to SELECT * FROM 'ux_merchant'
-    function get_all_merchant()
+    function fetch_all_merchant()
     {
-        return $this->db->table('ux_merchant')->get()->getResult();
+        return $this->db->table('ux_merchant');
+        // didnt close query because tableigniter takes builder class only
+    }
+    function mer_action_button()
+    {
+        $edit_button = function ($id) {
+            return "<button type='button' name='edit_merchant' class='btn btn-success btn-sm edit_merchant' data-id='" . $id['merchant_id'] . "'><i class='fas fa-edit'></i></button>
+                    <button type='button' name='delete_merchant' class='btn btn-danger btn-sm delete_merchant' data-id='" . $id['merchant_id'] . "'><i class='far fa-trash-alt'></i></button>";
+        };
+        return $edit_button;
     }
 
     function get_merchant_by_id($id)

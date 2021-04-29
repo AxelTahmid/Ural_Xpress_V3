@@ -43,8 +43,16 @@ $routes->get('delete_merchant/(:num)', 'MerchantSuperAdmin::delete_merchant/$1')
 $routes->match(['get', 'post'], 'edit_merchant/(:num)', 'MerchantSuperAdmin::edit_merchant/$1');
 $routes->match(['get', 'post'], 'add_merchant', 'MerchantSuperAdmin::add_merchant');
 
+//merchant ajax routes
+$routes->match(['get', 'post'], 'merchants', 'MerchantSuperAdmin::fetch_merchant');
+$routes->match(['get', 'post'], 'merchant_actions', 'MerchantSuperAdmin::action_merchant');
+$routes->match(['get', 'post'], 'merchant_by_id', 'MerchantSuperAdmin::fetch_merchant_by_id');
+$routes->match(['get', 'post'], 'del_merchant', 'MerchantSuperAdmin::del_merchant_by_id');
+
+
 //delivery routes
 $routes->get('invoice', 'DeliverySuperAdmin::view_delivery');
+
 //delivery ajax routes
 $routes->match(['get', 'post'], 'invoices', 'DeliverySuperAdmin::fetch_invoice');
 $routes->match(['get', 'post'], 'invoice_actions', 'DeliverySuperAdmin::action_invoice');
