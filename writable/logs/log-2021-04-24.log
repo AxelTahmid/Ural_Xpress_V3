@@ -1,0 +1,109 @@
+CRITICAL - 2021-04-24 17:30:30 --> Column 'recipient_name' cannot be null
+#0 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(330): mysqli->query('INSERT INTO `ux...')
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ux...')
+#2 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ux...')
+#3 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2206): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ux...', Array, false)
+#4 F:\xampp\htdocs\uralv3\app\Models\SuperFunctionsModel.php(59): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 F:\xampp\htdocs\uralv3\app\Controllers\DeliverySuperAdmin.php(32): App\Models\SuperFunctionsModel->add_recipient(Array)
+#6 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\DeliverySuperAdmin->add_recipient()
+#7 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliverySuperAdmin))
+#8 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2021-04-24 17:34:27 --> Undefined property: App\Controllers\DeliverySuperAdmin::$db
+#0 F:\xampp\htdocs\uralv3\app\Controllers\DeliverySuperAdmin.php(32): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'F:\\xampp\\htdocs...', 32, Array)
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\DeliverySuperAdmin->add_recipient()
+#2 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliverySuperAdmin))
+#3 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-04-24 17:34:58 --> Undefined property: App\Controllers\DeliverySuperAdmin::$delivery_super_model
+#0 F:\xampp\htdocs\uralv3\app\Controllers\DeliverySuperAdmin.php(32): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'F:\\xampp\\htdocs...', 32, Array)
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\DeliverySuperAdmin->add_recipient()
+#2 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliverySuperAdmin))
+#3 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-04-24 17:40:15 --> Undefined property: CodeIgniter\Database\MySQLi\Result::$recipient_id
+#0 F:\xampp\htdocs\uralv3\app\Controllers\DeliverySuperAdmin.php(35): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'F:\\xampp\\htdocs...', 35, Array)
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\DeliverySuperAdmin->add_recipient()
+#2 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliverySuperAdmin))
+#3 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-04-24 17:41:04 --> Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+#0 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\DeliverySuperAdmin->add_recipient()
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliverySuperAdmin))
+#2 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-04-24 17:41:21 --> Undefined property: CodeIgniter\Database\MySQLi\Result::$recipient_id
+#0 F:\xampp\htdocs\uralv3\app\Controllers\DeliverySuperAdmin.php(35): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'F:\\xampp\\htdocs...', 35, Array)
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\DeliverySuperAdmin->add_recipient()
+#2 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliverySuperAdmin))
+#3 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-04-24 17:42:08 --> Undefined property: CodeIgniter\Database\MySQLi\Result::$recipient
+#0 F:\xampp\htdocs\uralv3\app\Controllers\DeliverySuperAdmin.php(35): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'F:\\xampp\\htdocs...', 35, Array)
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\DeliverySuperAdmin->add_recipient()
+#2 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliverySuperAdmin))
+#3 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-04-24 17:42:37 --> Undefined property: CodeIgniter\Database\MySQLi\Result::$recipient_name
+#0 F:\xampp\htdocs\uralv3\app\Controllers\DeliverySuperAdmin.php(36): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'F:\\xampp\\htdocs...', 36, Array)
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\DeliverySuperAdmin->add_recipient()
+#2 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliverySuperAdmin))
+#3 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-04-24 18:04:01 --> Undefined index: addRecipient
+#0 F:\xampp\htdocs\uralv3\app\Controllers\DeliverySuperAdmin.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'F:\\xampp\\htdocs...', 26, Array)
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\DeliverySuperAdmin->add_recipient()
+#2 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliverySuperAdmin))
+#3 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-04-24 19:22:34 --> Unknown column 'publication' in 'field list'
+#0 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(330): mysqli->query('INSERT INTO `ux...')
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ux...')
+#2 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ux...')
+#3 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2206): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ux...', Array, false)
+#4 F:\xampp\htdocs\uralv3\app\Models\SuperFunctionsModel.php(63): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 F:\xampp\htdocs\uralv3\app\Controllers\DeliverySuperAdmin.php(47): App\Models\SuperFunctionsModel->add_delivery(Array)
+#6 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\DeliverySuperAdmin->add_recipient()
+#7 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliverySuperAdmin))
+#8 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2021-04-24 20:12:15 --> Invalid file: merchant/edit_invoice.php
+#0 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\View\View.php(224): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('merchant/edit_i...')
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Common.php(1071): CodeIgniter\View\View->render('merchant/edit_i...', Array, true)
+#2 F:\xampp\htdocs\uralv3\app\Controllers\DeliverySuperAdmin.php(88): view('merchant/edit_i...', Array)
+#3 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\DeliverySuperAdmin->edit_invoice_by_id('4')
+#4 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliverySuperAdmin))
+#5 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-04-24 20:13:00 --> Invalid file: merchant/edit_delivery.php
+#0 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\View\View.php(224): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('merchant/edit_d...')
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Common.php(1071): CodeIgniter\View\View->render('merchant/edit_d...', Array, true)
+#2 F:\xampp\htdocs\uralv3\app\Controllers\DeliverySuperAdmin.php(88): view('merchant/edit_d...', Array)
+#3 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\DeliverySuperAdmin->edit_invoice_by_id('4')
+#4 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliverySuperAdmin))
+#5 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#8 {main}

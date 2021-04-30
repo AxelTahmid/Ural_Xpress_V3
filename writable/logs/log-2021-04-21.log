@@ -1,0 +1,14 @@
+CRITICAL - 2021-04-21 15:39:07 --> Object of class CodeIgniter\Database\MySQLi\Connection could not be converted to string
+#0 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\DeliverySuperAdmin->view_delivery()
+#1 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliverySuperAdmin))
+#2 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 F:\xampp\htdocs\ci4loginpanel\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-04-21 15:41:40 --> Object of class App\Models\DeliveryModel could not be converted to string
+#0 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\DeliverySuperAdmin->view_delivery()
+#1 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliverySuperAdmin))
+#2 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 F:\xampp\htdocs\ci4loginpanel\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#5 {main}

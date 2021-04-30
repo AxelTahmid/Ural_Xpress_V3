@@ -1,0 +1,151 @@
+CRITICAL - 2021-04-20 15:30:04 --> Object of class App\Models\DeliveryModel could not be converted to string
+#0 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\DeliverySuperAdmin->index()
+#1 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliverySuperAdmin))
+#2 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 F:\xampp\htdocs\ci4loginpanel\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-04-20 15:41:32 --> Class 'App\Models\MerchantModel' not found
+#0 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\MerchantSuperAdmin->view_merchant()
+#1 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MerchantSuperAdmin))
+#2 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 F:\xampp\htdocs\ci4loginpanel\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-04-20 15:44:07 --> Undefined offset: 1
+#0 F:\xampp\htdocs\ci4loginpanel\app\Controllers\MerchantSuperAdmin.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'F:\\xampp\\htdocs...', 23, Array)
+#1 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\MerchantSuperAdmin->view_merchant()
+#2 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MerchantSuperAdmin))
+#3 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\xampp\htdocs\ci4loginpanel\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-04-20 16:10:36 --> Invalid file: manage_merchant, $data.php
+#0 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\View\View.php(224): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('manage_merchant...')
+#1 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\Common.php(1071): CodeIgniter\View\View->render('manage_merchant...', Array, true)
+#2 F:\xampp\htdocs\ci4loginpanel\app\Controllers\MerchantSuperAdmin.php(26): view('manage_merchant...')
+#3 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\MerchantSuperAdmin->view_merchant()
+#4 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MerchantSuperAdmin))
+#5 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 F:\xampp\htdocs\ci4loginpanel\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-04-20 16:30:35 --> syntax error, unexpected 'echo' (T_ECHO)
+#0 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\Common.php(1071): CodeIgniter\View\View->render('merchant/manage...', Array, true)
+#1 F:\xampp\htdocs\ci4loginpanel\app\Controllers\MerchantSuperAdmin.php(26): view('merchant/manage...', Array)
+#2 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\MerchantSuperAdmin->view_merchant()
+#3 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MerchantSuperAdmin))
+#4 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 F:\xampp\htdocs\ci4loginpanel\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-04-20 17:55:43 --> Trying to get property 'merchant_id' of non-object
+#0 F:\xampp\htdocs\ci4loginpanel\app\Views\merchant\manage_merchant.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'F:\\xampp\\htdocs...', 31, Array)
+#1 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\View\View.php(236): include('F:\\xampp\\htdocs...')
+#2 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\Common.php(1071): CodeIgniter\View\View->render('merchant/manage...', Array, true)
+#3 F:\xampp\htdocs\ci4loginpanel\app\Controllers\MerchantSuperAdmin.php(30): view('merchant/manage...', Array)
+#4 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\MerchantSuperAdmin->view_merchant()
+#5 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MerchantSuperAdmin))
+#6 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 F:\xampp\htdocs\ci4loginpanel\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-04-20 17:57:03 --> Trying to get property 'merchant_id' of non-object
+#0 F:\xampp\htdocs\ci4loginpanel\app\Views\merchant\manage_merchant.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'F:\\xampp\\htdocs...', 31, Array)
+#1 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\View\View.php(236): include('F:\\xampp\\htdocs...')
+#2 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\Common.php(1071): CodeIgniter\View\View->render('merchant/manage...', Array, true)
+#3 F:\xampp\htdocs\ci4loginpanel\app\Controllers\MerchantSuperAdmin.php(30): view('merchant/manage...', Array)
+#4 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\MerchantSuperAdmin->view_merchant()
+#5 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MerchantSuperAdmin))
+#6 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 F:\xampp\htdocs\ci4loginpanel\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-04-20 17:57:09 --> Trying to get property 'merchant_id' of non-object
+#0 F:\xampp\htdocs\ci4loginpanel\app\Views\merchant\manage_merchant.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'F:\\xampp\\htdocs...', 31, Array)
+#1 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\View\View.php(236): include('F:\\xampp\\htdocs...')
+#2 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\Common.php(1071): CodeIgniter\View\View->render('merchant/manage...', Array, true)
+#3 F:\xampp\htdocs\ci4loginpanel\app\Controllers\MerchantSuperAdmin.php(30): view('merchant/manage...', Array)
+#4 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\MerchantSuperAdmin->view_merchant()
+#5 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MerchantSuperAdmin))
+#6 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 F:\xampp\htdocs\ci4loginpanel\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-04-20 17:58:04 --> Trying to get property 'merchant_id' of non-object
+#0 F:\xampp\htdocs\ci4loginpanel\app\Views\merchant\manage_merchant.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'F:\\xampp\\htdocs...', 31, Array)
+#1 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\View\View.php(236): include('F:\\xampp\\htdocs...')
+#2 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\Common.php(1071): CodeIgniter\View\View->render('merchant/manage...', Array, true)
+#3 F:\xampp\htdocs\ci4loginpanel\app\Controllers\MerchantSuperAdmin.php(30): view('merchant/manage...', Array)
+#4 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\MerchantSuperAdmin->view_merchant()
+#5 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MerchantSuperAdmin))
+#6 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 F:\xampp\htdocs\ci4loginpanel\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-04-20 17:58:45 --> Trying to get property 'merchant_id' of non-object
+#0 F:\xampp\htdocs\ci4loginpanel\app\Views\merchant\manage_merchant.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'F:\\xampp\\htdocs...', 31, Array)
+#1 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\View\View.php(236): include('F:\\xampp\\htdocs...')
+#2 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\Common.php(1071): CodeIgniter\View\View->render('merchant/manage...', Array, true)
+#3 F:\xampp\htdocs\ci4loginpanel\app\Controllers\MerchantSuperAdmin.php(30): view('merchant/manage...', Array)
+#4 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\MerchantSuperAdmin->view_merchant()
+#5 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MerchantSuperAdmin))
+#6 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 F:\xampp\htdocs\ci4loginpanel\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-04-20 17:58:48 --> Trying to get property 'merchant_id' of non-object
+#0 F:\xampp\htdocs\ci4loginpanel\app\Views\merchant\manage_merchant.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'F:\\xampp\\htdocs...', 31, Array)
+#1 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\View\View.php(236): include('F:\\xampp\\htdocs...')
+#2 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\Common.php(1071): CodeIgniter\View\View->render('merchant/manage...', Array, true)
+#3 F:\xampp\htdocs\ci4loginpanel\app\Controllers\MerchantSuperAdmin.php(30): view('merchant/manage...', Array)
+#4 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\MerchantSuperAdmin->view_merchant()
+#5 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MerchantSuperAdmin))
+#6 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 F:\xampp\htdocs\ci4loginpanel\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-04-20 18:00:09 --> Trying to get property 'merchant_id' of non-object
+#0 F:\xampp\htdocs\ci4loginpanel\app\Views\merchant\manage_merchant.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'F:\\xampp\\htdocs...', 31, Array)
+#1 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\View\View.php(236): include('F:\\xampp\\htdocs...')
+#2 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\Common.php(1071): CodeIgniter\View\View->render('merchant/manage...', Array, true)
+#3 F:\xampp\htdocs\ci4loginpanel\app\Controllers\MerchantSuperAdmin.php(30): view('merchant/manage...', Array)
+#4 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\MerchantSuperAdmin->view_merchant()
+#5 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MerchantSuperAdmin))
+#6 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 F:\xampp\htdocs\ci4loginpanel\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-04-20 18:00:10 --> Trying to get property 'merchant_id' of non-object
+#0 F:\xampp\htdocs\ci4loginpanel\app\Views\merchant\manage_merchant.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'F:\\xampp\\htdocs...', 31, Array)
+#1 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\View\View.php(236): include('F:\\xampp\\htdocs...')
+#2 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\Common.php(1071): CodeIgniter\View\View->render('merchant/manage...', Array, true)
+#3 F:\xampp\htdocs\ci4loginpanel\app\Controllers\MerchantSuperAdmin.php(30): view('merchant/manage...', Array)
+#4 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\MerchantSuperAdmin->view_merchant()
+#5 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MerchantSuperAdmin))
+#6 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 F:\xampp\htdocs\ci4loginpanel\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-04-20 18:00:23 --> Trying to get property 'merchant_id' of non-object
+#0 F:\xampp\htdocs\ci4loginpanel\app\Views\merchant\manage_merchant.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'F:\\xampp\\htdocs...', 31, Array)
+#1 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\View\View.php(236): include('F:\\xampp\\htdocs...')
+#2 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\Common.php(1071): CodeIgniter\View\View->render('merchant/manage...', Array, true)
+#3 F:\xampp\htdocs\ci4loginpanel\app\Controllers\MerchantSuperAdmin.php(30): view('merchant/manage...', Array)
+#4 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\MerchantSuperAdmin->view_merchant()
+#5 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MerchantSuperAdmin))
+#6 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 F:\xampp\htdocs\ci4loginpanel\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-04-20 18:01:06 --> Trying to get property 'merchant_id' of non-object
+#0 F:\xampp\htdocs\ci4loginpanel\app\Views\merchant\manage_merchant.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'F:\\xampp\\htdocs...', 31, Array)
+#1 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\View\View.php(236): include('F:\\xampp\\htdocs...')
+#2 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\Common.php(1071): CodeIgniter\View\View->render('merchant/manage...', Array, true)
+#3 F:\xampp\htdocs\ci4loginpanel\app\Controllers\MerchantSuperAdmin.php(31): view('merchant/manage...', Array)
+#4 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\MerchantSuperAdmin->view_merchant()
+#5 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MerchantSuperAdmin))
+#6 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 F:\xampp\htdocs\ci4loginpanel\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 F:\xampp\htdocs\ci4loginpanel\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#9 {main}

@@ -1,0 +1,11 @@
+CRITICAL - 2021-04-29 13:19:33 --> Undefined index: command_name
+#0 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Help.php(116): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'F:\\xampp\\htdocs...', 116, Array)
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(137): CodeIgniter\Commands\Help->run(Array)
+#2 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(110): CodeIgniter\CLI\CommandRunner->runCommand('help', Array)
+#3 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CLI\CommandRunner.php(86): CodeIgniter\CLI\CommandRunner->index(Array)
+#4 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(906): CodeIgniter\CLI\CommandRunner->_remap('index', 'help', 'command_name')
+#5 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#6 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CLI\Console.php(86): CodeIgniter\CodeIgniter->run()
+#8 F:\xampp\htdocs\uralv3\spark(57): CodeIgniter\CLI\Console->run()
+#9 {main}

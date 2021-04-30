@@ -1,0 +1,185 @@
+CRITICAL - 2021-04-23 13:52:51 --> Call to undefined method App\Models\SuperFunctionsModel::get_all_merchant()
+#0 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\MerchantSuperAdmin->view_merchant()
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MerchantSuperAdmin))
+#2 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-04-23 15:42:17 --> Undefined variable: all_merchant
+#0 F:\xampp\htdocs\uralv3\app\Views\merchant\manage_merchant.php(32): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'F:\\xampp\\htdocs...', 32, Array)
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\View\View.php(236): include('F:\\xampp\\htdocs...')
+#2 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Common.php(1071): CodeIgniter\View\View->render('merchant/manage...', Array, true)
+#3 F:\xampp\htdocs\uralv3\app\Controllers\MerchantSuperAdmin.php(35): view('merchant/manage...', Array)
+#4 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\MerchantSuperAdmin->add_merchant()
+#5 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MerchantSuperAdmin))
+#6 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-04-23 15:48:33 --> Call to undefined function set_value()
+#0 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\View\View.php(236): include()
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Common.php(1071): CodeIgniter\View\View->render('merchant/add_ed...', Array, true)
+#2 F:\xampp\htdocs\uralv3\app\Controllers\MerchantSuperAdmin.php(45): view('merchant/add_ed...', Array)
+#3 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\MerchantSuperAdmin->add_merchant()
+#4 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MerchantSuperAdmin))
+#5 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-04-23 15:58:35 --> Call to undefined function set_value()
+#0 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\View\View.php(236): include()
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Common.php(1071): CodeIgniter\View\View->render('merchant/add_ed...', Array, true)
+#2 F:\xampp\htdocs\uralv3\app\Controllers\MerchantSuperAdmin.php(46): view('merchant/add_ed...')
+#3 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\MerchantSuperAdmin->add_merchant()
+#4 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MerchantSuperAdmin))
+#5 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-04-23 18:13:03 --> syntax error, unexpected '}', expecting ';' or ','
+#0 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('F:\\xampp\\htdocs...')
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(861): class_exists('\\App\\Controller...', true)
+#5 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(388): CodeIgniter\CodeIgniter->startController()
+#6 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-04-23 18:13:14 --> Array to string conversion
+#0 F:\xampp\htdocs\uralv3\app\Controllers\MerchantSuperAdmin.php(53): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'F:\\xampp\\htdocs...', 53, Array)
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\MerchantSuperAdmin->edit_merchant('1')
+#2 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MerchantSuperAdmin))
+#3 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-04-23 18:14:18 --> Array to string conversion
+#0 F:\xampp\htdocs\uralv3\app\Controllers\MerchantSuperAdmin.php(54): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'F:\\xampp\\htdocs...', 54, Array)
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\MerchantSuperAdmin->edit_merchant('1')
+#2 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MerchantSuperAdmin))
+#3 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-04-23 18:14:37 --> Array to string conversion
+#0 F:\xampp\htdocs\uralv3\app\Controllers\MerchantSuperAdmin.php(54): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'F:\\xampp\\htdocs...', 54, Array)
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\MerchantSuperAdmin->edit_merchant('1')
+#2 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MerchantSuperAdmin))
+#3 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-04-23 18:25:26 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getRow()
+#0 F:\xampp\htdocs\uralv3\app\Controllers\MerchantSuperAdmin.php(55): App\Models\SuperFunctionsModel->get_merchant_by_id('2')
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\MerchantSuperAdmin->edit_merchant('2')
+#2 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MerchantSuperAdmin))
+#3 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-04-23 18:28:30 --> Undefined variable: data
+#0 F:\xampp\htdocs\uralv3\app\Views\merchant\edit_merchant_form.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'F:\\xampp\\htdocs...', 22, Array)
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\View\View.php(236): include('F:\\xampp\\htdocs...')
+#2 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Common.php(1071): CodeIgniter\View\View->render('merchant/edit_m...', Array, true)
+#3 F:\xampp\htdocs\uralv3\app\Controllers\MerchantSuperAdmin.php(61): view('merchant/edit_m...', Array)
+#4 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\MerchantSuperAdmin->edit_merchant('104')
+#5 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MerchantSuperAdmin))
+#6 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-04-23 18:28:34 --> Undefined variable: data
+#0 F:\xampp\htdocs\uralv3\app\Views\merchant\edit_merchant_form.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'F:\\xampp\\htdocs...', 22, Array)
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\View\View.php(236): include('F:\\xampp\\htdocs...')
+#2 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Common.php(1071): CodeIgniter\View\View->render('merchant/edit_m...', Array, true)
+#3 F:\xampp\htdocs\uralv3\app\Controllers\MerchantSuperAdmin.php(61): view('merchant/edit_m...', Array)
+#4 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\MerchantSuperAdmin->edit_merchant('104')
+#5 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MerchantSuperAdmin))
+#6 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-04-23 18:57:24 --> Duplicate entry '0' for key 'PRIMARY'
+#0 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(330): mysqli->query('UPDATE `ux_merc...')
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `ux_merc...')
+#2 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `ux_merc...')
+#3 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2410): CodeIgniter\Database\BaseConnection->query('UPDATE `ux_merc...', Array, false)
+#4 F:\xampp\htdocs\uralv3\app\Models\SuperFunctionsModel.php(46): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 F:\xampp\htdocs\uralv3\app\Controllers\MerchantSuperAdmin.php(68): App\Models\SuperFunctionsModel->update_merchant_by_id('2', Array)
+#6 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\MerchantSuperAdmin->edit_merchant('2')
+#7 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MerchantSuperAdmin))
+#8 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2021-04-23 18:58:02 --> Duplicate entry '0' for key 'PRIMARY'
+#0 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(330): mysqli->query('UPDATE `ux_merc...')
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `ux_merc...')
+#2 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `ux_merc...')
+#3 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2410): CodeIgniter\Database\BaseConnection->query('UPDATE `ux_merc...', Array, false)
+#4 F:\xampp\htdocs\uralv3\app\Models\SuperFunctionsModel.php(46): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 F:\xampp\htdocs\uralv3\app\Controllers\MerchantSuperAdmin.php(74): App\Models\SuperFunctionsModel->update_merchant_by_id('2', Array)
+#6 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\MerchantSuperAdmin->edit_merchant('2')
+#7 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MerchantSuperAdmin))
+#8 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2021-04-23 20:55:08 --> Undefined index: merchant_img
+#0 F:\xampp\htdocs\uralv3\app\Controllers\MerchantSuperAdmin.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'F:\\xampp\\htdocs...', 65, Array)
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\MerchantSuperAdmin->edit_merchant('3')
+#2 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MerchantSuperAdmin))
+#3 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-04-23 20:57:52 --> Undefined variable: data
+#0 F:\xampp\htdocs\uralv3\app\Views\merchant\edit_merchant_form.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'F:\\xampp\\htdocs...', 18, Array)
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\View\View.php(236): include('F:\\xampp\\htdocs...')
+#2 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Common.php(1071): CodeIgniter\View\View->render('merchant/edit_m...', Array, true)
+#3 F:\xampp\htdocs\uralv3\app\Controllers\MerchantSuperAdmin.php(91): view('merchant/edit_m...', Array)
+#4 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\MerchantSuperAdmin->edit_merchant('3')
+#5 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MerchantSuperAdmin))
+#6 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-04-23 20:59:35 --> Undefined index: find_merchant->merchant_id
+#0 F:\xampp\htdocs\uralv3\app\Controllers\MerchantSuperAdmin.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'F:\\xampp\\htdocs...', 65, Array)
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\MerchantSuperAdmin->edit_merchant('3')
+#2 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MerchantSuperAdmin))
+#3 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-04-23 21:00:40 --> Undefined index: merchant_id
+#0 F:\xampp\htdocs\uralv3\app\Controllers\MerchantSuperAdmin.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'F:\\xampp\\htdocs...', 65, Array)
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\MerchantSuperAdmin->edit_merchant('3')
+#2 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MerchantSuperAdmin))
+#3 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-04-23 21:00:57 --> Cannot use object of type stdClass as array
+#0 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\MerchantSuperAdmin->edit_merchant('3')
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MerchantSuperAdmin))
+#2 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-04-23 21:00:59 --> Cannot use object of type stdClass as array
+#0 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\MerchantSuperAdmin->edit_merchant('3')
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MerchantSuperAdmin))
+#2 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-04-23 21:01:43 --> Cannot use object of type stdClass as array
+#0 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\MerchantSuperAdmin->edit_merchant('3')
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MerchantSuperAdmin))
+#2 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#5 {main}

@@ -1,0 +1,92 @@
+CRITICAL - 2021-04-28 10:15:45 --> Illegal parameter data types int and row for operation '='
+#0 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(330): mysqli->query('SELECT *\nFROM `...')
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1819): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 F:\xampp\htdocs\uralv3\app\Models\SuperFunctionsModel.php(62): CodeIgniter\Database\BaseBuilder->get()
+#5 F:\xampp\htdocs\uralv3\vendor\monken\tablesigniter\src\TablesIgniter.php(186): App\Models\SuperFunctionsModel->App\Models\{closure}(Array)
+#6 F:\xampp\htdocs\uralv3\vendor\monken\tablesigniter\src\TablesIgniter.php(252): monken\TablesIgniter->getOutputData(Array)
+#7 F:\xampp\htdocs\uralv3\app\Controllers\DeliverySuperAdmin.php(47): monken\TablesIgniter->getDatatable()
+#8 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\DeliverySuperAdmin->fetch_invoice()
+#9 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliverySuperAdmin))
+#10 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2021-04-28 10:16:07 --> Illegal parameter data types int and row for operation '='
+#0 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(330): mysqli->query('SELECT *\nFROM `...')
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1819): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 F:\xampp\htdocs\uralv3\app\Models\SuperFunctionsModel.php(62): CodeIgniter\Database\BaseBuilder->get()
+#5 F:\xampp\htdocs\uralv3\vendor\monken\tablesigniter\src\TablesIgniter.php(186): App\Models\SuperFunctionsModel->App\Models\{closure}(Array)
+#6 F:\xampp\htdocs\uralv3\vendor\monken\tablesigniter\src\TablesIgniter.php(252): monken\TablesIgniter->getOutputData(Array)
+#7 F:\xampp\htdocs\uralv3\app\Controllers\DeliverySuperAdmin.php(47): monken\TablesIgniter->getDatatable()
+#8 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\DeliverySuperAdmin->fetch_invoice()
+#9 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliverySuperAdmin))
+#10 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2021-04-28 10:16:12 --> Must be requested by jQuery DataTables.
+#0 F:\xampp\htdocs\uralv3\app\Controllers\DeliverySuperAdmin.php(22): monken\TablesIgniter->__construct()
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\DeliverySuperAdmin->fetch_invoice()
+#2 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliverySuperAdmin))
+#3 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-04-28 10:18:59 --> Illegal parameter data types int and row for operation '='
+#0 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(330): mysqli->query('SELECT *\nFROM `...')
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1819): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 F:\xampp\htdocs\uralv3\app\Models\SuperFunctionsModel.php(62): CodeIgniter\Database\BaseBuilder->get()
+#5 F:\xampp\htdocs\uralv3\vendor\monken\tablesigniter\src\TablesIgniter.php(186): App\Models\SuperFunctionsModel->App\Models\{closure}(Array)
+#6 F:\xampp\htdocs\uralv3\vendor\monken\tablesigniter\src\TablesIgniter.php(252): monken\TablesIgniter->getOutputData(Array)
+#7 F:\xampp\htdocs\uralv3\app\Controllers\DeliverySuperAdmin.php(47): monken\TablesIgniter->getDatatable()
+#8 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\DeliverySuperAdmin->fetch_invoice()
+#9 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliverySuperAdmin))
+#10 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2021-04-28 10:20:31 --> Undefined variable: id
+#0 F:\xampp\htdocs\uralv3\app\Models\SuperFunctionsModel.php(61): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'F:\\xampp\\htdocs...', 61, Array)
+#1 F:\xampp\htdocs\uralv3\vendor\monken\tablesigniter\src\TablesIgniter.php(186): App\Models\SuperFunctionsModel->App\Models\{closure}(Array)
+#2 F:\xampp\htdocs\uralv3\vendor\monken\tablesigniter\src\TablesIgniter.php(252): monken\TablesIgniter->getOutputData(Array)
+#3 F:\xampp\htdocs\uralv3\app\Controllers\DeliverySuperAdmin.php(47): monken\TablesIgniter->getDatatable()
+#4 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\DeliverySuperAdmin->fetch_invoice()
+#5 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliverySuperAdmin))
+#6 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-04-28 10:57:47 --> Cannot access protected property App\Models\SuperFunctionsModel::$db
+#0 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\DeliverySuperAdmin->fetch_invoice_by_id()
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliverySuperAdmin))
+#2 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-04-28 10:58:53 --> Cannot access protected property App\Models\SuperFunctionsModel::$db
+#0 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\DeliverySuperAdmin->fetch_invoice_by_id()
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliverySuperAdmin))
+#2 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-04-28 10:59:15 --> Cannot access protected property App\Models\SuperFunctionsModel::$db
+#0 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\DeliverySuperAdmin->fetch_invoice_by_id()
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliverySuperAdmin))
+#2 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-04-28 10:59:40 --> Cannot access protected property App\Models\SuperFunctionsModel::$db
+#0 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\DeliverySuperAdmin->fetch_invoice_by_id()
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliverySuperAdmin))
+#2 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#5 {main}

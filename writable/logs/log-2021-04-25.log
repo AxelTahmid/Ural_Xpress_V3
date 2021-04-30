@@ -1,0 +1,100 @@
+CRITICAL - 2021-04-25 15:50:59 --> Invalid file: add_merchant_form.php
+#0 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\View\View.php(224): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('add_merchant_fo...')
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\View\View.php(503): CodeIgniter\View\View->render('add_merchant_fo...', NULL, true)
+#2 F:\xampp\htdocs\uralv3\app\Views\merchant\manage_merchant.php(2): CodeIgniter\View\View->include('add_merchant_fo...')
+#3 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\View\View.php(236): include('F:\\xampp\\htdocs...')
+#4 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Common.php(1071): CodeIgniter\View\View->render('merchant/manage...', Array, true)
+#5 F:\xampp\htdocs\uralv3\app\Controllers\MerchantSuperAdmin.php(109): view('merchant/manage...', Array)
+#6 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\MerchantSuperAdmin->view_merchant()
+#7 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MerchantSuperAdmin))
+#8 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2021-04-25 15:51:21 --> Invalid file: /add_merchant_form.php
+#0 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\View\View.php(224): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/add_merchant_f...')
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\View\View.php(503): CodeIgniter\View\View->render('/add_merchant_f...', NULL, true)
+#2 F:\xampp\htdocs\uralv3\app\Views\merchant\manage_merchant.php(2): CodeIgniter\View\View->include('/add_merchant_f...')
+#3 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\View\View.php(236): include('F:\\xampp\\htdocs...')
+#4 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Common.php(1071): CodeIgniter\View\View->render('merchant/manage...', Array, true)
+#5 F:\xampp\htdocs\uralv3\app\Controllers\MerchantSuperAdmin.php(109): view('merchant/manage...', Array)
+#6 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\MerchantSuperAdmin->view_merchant()
+#7 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MerchantSuperAdmin))
+#8 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2021-04-25 15:51:26 --> Invalid file: \add_merchant_form.php
+#0 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\View\View.php(224): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('\\add_merchant_f...')
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\View\View.php(503): CodeIgniter\View\View->render('\\add_merchant_f...', NULL, true)
+#2 F:\xampp\htdocs\uralv3\app\Views\merchant\manage_merchant.php(2): CodeIgniter\View\View->include('\\add_merchant_f...')
+#3 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\View\View.php(236): include('F:\\xampp\\htdocs...')
+#4 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Common.php(1071): CodeIgniter\View\View->render('merchant/manage...', Array, true)
+#5 F:\xampp\htdocs\uralv3\app\Controllers\MerchantSuperAdmin.php(109): view('merchant/manage...', Array)
+#6 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\MerchantSuperAdmin->view_merchant()
+#7 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MerchantSuperAdmin))
+#8 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2021-04-25 17:35:29 --> Call to a member function isValid() on null
+#0 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\MerchantSuperAdmin->add_merchant()
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MerchantSuperAdmin))
+#2 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-04-25 17:35:32 --> Call to a member function isValid() on null
+#0 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\MerchantSuperAdmin->add_merchant()
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MerchantSuperAdmin))
+#2 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-04-25 17:35:32 --> Call to a member function isValid() on null
+#0 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\MerchantSuperAdmin->add_merchant()
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MerchantSuperAdmin))
+#2 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-04-25 17:38:02 --> Call to a member function isValid() on string
+#0 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\MerchantSuperAdmin->add_merchant()
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MerchantSuperAdmin))
+#2 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-04-25 17:39:23 --> Call to a member function isValid() on string
+#0 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\MerchantSuperAdmin->add_merchant()
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MerchantSuperAdmin))
+#2 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-04-25 17:44:17 --> Column 'merchant_email' cannot be null
+#0 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(330): mysqli->query('INSERT INTO `ux...')
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ux...')
+#2 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ux...')
+#3 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2206): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ux...', Array, false)
+#4 F:\xampp\htdocs\uralv3\app\Models\SuperFunctionsModel.php(45): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 F:\xampp\htdocs\uralv3\app\Controllers\MerchantSuperAdmin.php(32): App\Models\SuperFunctionsModel->add_merchant(Array)
+#6 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\MerchantSuperAdmin->add_merchant()
+#7 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MerchantSuperAdmin))
+#8 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2021-04-25 17:51:13 --> Column 'merchant_email' cannot be null
+#0 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(330): mysqli->query('INSERT INTO `ux...')
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ux...')
+#2 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ux...')
+#3 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2206): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ux...', Array, false)
+#4 F:\xampp\htdocs\uralv3\app\Models\SuperFunctionsModel.php(45): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 F:\xampp\htdocs\uralv3\app\Controllers\MerchantSuperAdmin.php(32): App\Models\SuperFunctionsModel->add_merchant(Array)
+#6 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\MerchantSuperAdmin->add_merchant()
+#7 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MerchantSuperAdmin))
+#8 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#11 {main}

@@ -1,0 +1,297 @@
+CRITICAL - 2021-04-27 14:04:56 --> Undefined variable: success
+#0 F:\xampp\htdocs\uralv3\app\Controllers\DeliverySuperAdmin.php(122): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'F:\\xampp\\htdocs...', 122, Array)
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\DeliverySuperAdmin->add_delivery_with_recipient()
+#2 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliverySuperAdmin))
+#3 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-04-27 14:05:19 --> Undefined variable: success
+#0 F:\xampp\htdocs\uralv3\app\Controllers\DeliverySuperAdmin.php(122): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'F:\\xampp\\htdocs...', 122, Array)
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\DeliverySuperAdmin->add_delivery_with_recipient()
+#2 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliverySuperAdmin))
+#3 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-04-27 14:05:55 --> Undefined variable: success
+#0 F:\xampp\htdocs\uralv3\app\Controllers\DeliverySuperAdmin.php(122): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'F:\\xampp\\htdocs...', 122, Array)
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\DeliverySuperAdmin->add_delivery_with_recipient()
+#2 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliverySuperAdmin))
+#3 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-04-27 14:11:19 --> Undefined variable: success
+#0 F:\xampp\htdocs\uralv3\app\Controllers\DeliverySuperAdmin.php(122): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'F:\\xampp\\htdocs...', 122, Array)
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\DeliverySuperAdmin->action_invoice()
+#2 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliverySuperAdmin))
+#3 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-04-27 14:17:47 --> Undefined variable: success
+#0 F:\xampp\htdocs\uralv3\app\Controllers\DeliverySuperAdmin.php(124): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'F:\\xampp\\htdocs...', 124, Array)
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\DeliverySuperAdmin->action_invoice()
+#2 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliverySuperAdmin))
+#3 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-04-27 14:30:03 --> Undefined variable: success
+#0 F:\xampp\htdocs\uralv3\app\Controllers\DeliverySuperAdmin.php(124): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'F:\\xampp\\htdocs...', 124, Array)
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\DeliverySuperAdmin->action_invoice()
+#2 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliverySuperAdmin))
+#3 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-04-27 14:30:09 --> Undefined variable: success
+#0 F:\xampp\htdocs\uralv3\app\Controllers\DeliverySuperAdmin.php(124): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'F:\\xampp\\htdocs...', 124, Array)
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\DeliverySuperAdmin->action_invoice()
+#2 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliverySuperAdmin))
+#3 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-04-27 14:43:14 --> Undefined variable: success
+#0 F:\xampp\htdocs\uralv3\app\Controllers\DeliverySuperAdmin.php(124): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'F:\\xampp\\htdocs...', 124, Array)
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\DeliverySuperAdmin->action_invoice()
+#2 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliverySuperAdmin))
+#3 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-04-27 15:02:35 --> Undefined variable: success
+#0 F:\xampp\htdocs\uralv3\app\Controllers\DeliverySuperAdmin.php(124): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'F:\\xampp\\htdocs...', 124, Array)
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\DeliverySuperAdmin->action_invoice()
+#2 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliverySuperAdmin))
+#3 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-04-27 15:24:43 --> Duplicate entry 'X2C2B26' for key 'delivery_invoice_no'
+#0 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(330): mysqli->query('INSERT INTO `ux...')
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ux...')
+#2 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ux...')
+#3 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2206): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ux...', Array, false)
+#4 F:\xampp\htdocs\uralv3\app\Models\SuperFunctionsModel.php(70): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 F:\xampp\htdocs\uralv3\app\Controllers\DeliverySuperAdmin.php(108): App\Models\SuperFunctionsModel->add_delivery(Array)
+#6 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\DeliverySuperAdmin->action_invoice()
+#7 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliverySuperAdmin))
+#8 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2021-04-27 15:35:07 --> Cannot delete or update a parent row: a foreign key constraint fails (`ural_xpress_ci4`.`ux_delivery`, CONSTRAINT `FK_recipient` FOREIGN KEY (`delivery_recipient_id`) REFERENCES `ux_recipient` (`recipient_id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+#0 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(330): mysqli->query('DELETE FROM `ux...')
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ux...')
+#2 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ux...')
+#3 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2798): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ux...', Array, false)
+#4 F:\xampp\htdocs\uralv3\app\Models\SuperFunctionsModel.php(82): CodeIgniter\Database\BaseBuilder->delete(Array)
+#5 F:\xampp\htdocs\uralv3\app\Controllers\DeliverySuperAdmin.php(167): App\Models\SuperFunctionsModel->delete_invoice('15')
+#6 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\DeliverySuperAdmin->delete_invoice_by_id('15')
+#7 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliverySuperAdmin))
+#8 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2021-04-27 16:00:42 --> Undefined variable: all_delivery
+#0 F:\xampp\htdocs\uralv3\app\Views\delivery\manage_delivery.php(42): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'F:\\xampp\\htdocs...', 42, Array)
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\View\View.php(236): include('F:\\xampp\\htdocs...')
+#2 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Common.php(1071): CodeIgniter\View\View->render('delivery/manage...', Array, true)
+#3 F:\xampp\htdocs\uralv3\app\Controllers\DeliverySuperAdmin.php(15): view('delivery/manage...')
+#4 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\DeliverySuperAdmin->view_delivery()
+#5 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliverySuperAdmin))
+#6 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-04-27 16:00:59 --> Undefined variable: all_delivery
+#0 F:\xampp\htdocs\uralv3\app\Views\delivery\manage_delivery.php(42): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'F:\\xampp\\htdocs...', 42, Array)
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\View\View.php(236): include('F:\\xampp\\htdocs...')
+#2 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Common.php(1071): CodeIgniter\View\View->render('delivery/manage...', Array, true)
+#3 F:\xampp\htdocs\uralv3\app\Controllers\DeliverySuperAdmin.php(15): view('delivery/manage...')
+#4 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\DeliverySuperAdmin->view_delivery()
+#5 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliverySuperAdmin))
+#6 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-04-27 16:01:00 --> Undefined variable: all_delivery
+#0 F:\xampp\htdocs\uralv3\app\Views\delivery\manage_delivery.php(42): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'F:\\xampp\\htdocs...', 42, Array)
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\View\View.php(236): include('F:\\xampp\\htdocs...')
+#2 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Common.php(1071): CodeIgniter\View\View->render('delivery/manage...', Array, true)
+#3 F:\xampp\htdocs\uralv3\app\Controllers\DeliverySuperAdmin.php(15): view('delivery/manage...')
+#4 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\DeliverySuperAdmin->view_delivery()
+#5 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliverySuperAdmin))
+#6 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-04-27 16:01:20 --> Undefined variable: all_delivery
+#0 F:\xampp\htdocs\uralv3\app\Views\delivery\manage_delivery.php(42): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'F:\\xampp\\htdocs...', 42, Array)
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\View\View.php(236): include('F:\\xampp\\htdocs...')
+#2 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Common.php(1071): CodeIgniter\View\View->render('delivery/manage...', Array, true)
+#3 F:\xampp\htdocs\uralv3\app\Controllers\DeliverySuperAdmin.php(15): view('delivery/manage...')
+#4 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\DeliverySuperAdmin->view_delivery()
+#5 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliverySuperAdmin))
+#6 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-04-27 16:01:50 --> Undefined variable: all_delivery
+#0 F:\xampp\htdocs\uralv3\app\Views\delivery\manage_delivery.php(42): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'F:\\xampp\\htdocs...', 42, Array)
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\View\View.php(236): include('F:\\xampp\\htdocs...')
+#2 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Common.php(1071): CodeIgniter\View\View->render('delivery/manage...', Array, true)
+#3 F:\xampp\htdocs\uralv3\app\Controllers\DeliverySuperAdmin.php(15): view('delivery/manage...')
+#4 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\DeliverySuperAdmin->view_delivery()
+#5 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliverySuperAdmin))
+#6 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-04-27 16:01:52 --> Undefined variable: all_delivery
+#0 F:\xampp\htdocs\uralv3\app\Views\delivery\manage_delivery.php(42): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'F:\\xampp\\htdocs...', 42, Array)
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\View\View.php(236): include('F:\\xampp\\htdocs...')
+#2 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Common.php(1071): CodeIgniter\View\View->render('delivery/manage...', Array, true)
+#3 F:\xampp\htdocs\uralv3\app\Controllers\DeliverySuperAdmin.php(15): view('delivery/manage...')
+#4 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\DeliverySuperAdmin->view_delivery()
+#5 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliverySuperAdmin))
+#6 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-04-27 16:02:43 --> Undefined variable: all_delivery
+#0 F:\xampp\htdocs\uralv3\app\Views\delivery\manage_delivery.php(42): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'F:\\xampp\\htdocs...', 42, Array)
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\View\View.php(236): include('F:\\xampp\\htdocs...')
+#2 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Common.php(1071): CodeIgniter\View\View->render('delivery/manage...', Array, true)
+#3 F:\xampp\htdocs\uralv3\app\Controllers\DeliverySuperAdmin.php(15): view('delivery/manage...')
+#4 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\DeliverySuperAdmin->view_delivery()
+#5 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliverySuperAdmin))
+#6 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-04-27 16:03:11 --> Undefined variable: all_delivery
+#0 F:\xampp\htdocs\uralv3\app\Views\delivery\manage_delivery.php(42): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'F:\\xampp\\htdocs...', 42, Array)
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\View\View.php(236): include('F:\\xampp\\htdocs...')
+#2 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Common.php(1071): CodeIgniter\View\View->render('delivery/manage...', Array, true)
+#3 F:\xampp\htdocs\uralv3\app\Controllers\DeliverySuperAdmin.php(15): view('delivery/manage...')
+#4 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\DeliverySuperAdmin->view_delivery()
+#5 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliverySuperAdmin))
+#6 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-04-27 16:03:12 --> Argument 1 passed to monken\TablesIgniter::setTable() must be an instance of CodeIgniter\Database\BaseBuilder, array given, called in F:\xampp\htdocs\uralv3\app\Controllers\DeliverySuperAdmin.php on line 25
+#0 F:\xampp\htdocs\uralv3\app\Controllers\DeliverySuperAdmin.php(25): monken\TablesIgniter->setTable(Array)
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\DeliverySuperAdmin->fetch_invoice()
+#2 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliverySuperAdmin))
+#3 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-04-27 16:03:16 --> Undefined variable: all_delivery
+#0 F:\xampp\htdocs\uralv3\app\Views\delivery\manage_delivery.php(42): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'F:\\xampp\\htdocs...', 42, Array)
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\View\View.php(236): include('F:\\xampp\\htdocs...')
+#2 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Common.php(1071): CodeIgniter\View\View->render('delivery/manage...', Array, true)
+#3 F:\xampp\htdocs\uralv3\app\Controllers\DeliverySuperAdmin.php(15): view('delivery/manage...')
+#4 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\DeliverySuperAdmin->view_delivery()
+#5 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliverySuperAdmin))
+#6 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-04-27 16:03:41 --> Undefined variable: all_delivery
+#0 F:\xampp\htdocs\uralv3\app\Views\delivery\manage_delivery.php(42): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'F:\\xampp\\htdocs...', 42, Array)
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\View\View.php(236): include('F:\\xampp\\htdocs...')
+#2 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Common.php(1071): CodeIgniter\View\View->render('delivery/manage...', Array, true)
+#3 F:\xampp\htdocs\uralv3\app\Controllers\DeliverySuperAdmin.php(15): view('delivery/manage...')
+#4 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\DeliverySuperAdmin->view_delivery()
+#5 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliverySuperAdmin))
+#6 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-04-27 16:03:42 --> Argument 1 passed to monken\TablesIgniter::setTable() must be an instance of CodeIgniter\Database\BaseBuilder, array given, called in F:\xampp\htdocs\uralv3\app\Controllers\DeliverySuperAdmin.php on line 25
+#0 F:\xampp\htdocs\uralv3\app\Controllers\DeliverySuperAdmin.php(25): monken\TablesIgniter->setTable(Array)
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\DeliverySuperAdmin->fetch_invoice()
+#2 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliverySuperAdmin))
+#3 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-04-27 16:03:47 --> Undefined variable: all_delivery
+#0 F:\xampp\htdocs\uralv3\app\Views\delivery\manage_delivery.php(42): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'F:\\xampp\\htdocs...', 42, Array)
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\View\View.php(236): include('F:\\xampp\\htdocs...')
+#2 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Common.php(1071): CodeIgniter\View\View->render('delivery/manage...', Array, true)
+#3 F:\xampp\htdocs\uralv3\app\Controllers\DeliverySuperAdmin.php(15): view('delivery/manage...')
+#4 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\DeliverySuperAdmin->view_delivery()
+#5 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliverySuperAdmin))
+#6 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-04-27 16:05:17 --> Argument 1 passed to monken\TablesIgniter::setTable() must be an instance of CodeIgniter\Database\BaseBuilder, array given, called in F:\xampp\htdocs\uralv3\app\Controllers\DeliverySuperAdmin.php on line 25
+#0 F:\xampp\htdocs\uralv3\app\Controllers\DeliverySuperAdmin.php(25): monken\TablesIgniter->setTable(Array)
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\DeliverySuperAdmin->fetch_invoice()
+#2 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliverySuperAdmin))
+#3 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-04-27 16:14:11 --> Argument 1 passed to monken\TablesIgniter::setTable() must be an instance of CodeIgniter\Database\BaseBuilder, array given, called in F:\xampp\htdocs\uralv3\app\Controllers\DeliverySuperAdmin.php on line 25
+#0 F:\xampp\htdocs\uralv3\app\Controllers\DeliverySuperAdmin.php(25): monken\TablesIgniter->setTable(Array)
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\DeliverySuperAdmin->fetch_invoice()
+#2 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliverySuperAdmin))
+#3 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-04-27 16:14:21 --> Must be requested by jQuery DataTables.
+#0 F:\xampp\htdocs\uralv3\app\Controllers\DeliverySuperAdmin.php(24): monken\TablesIgniter->__construct()
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\DeliverySuperAdmin->fetch_invoice()
+#2 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliverySuperAdmin))
+#3 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-04-27 16:16:23 --> Argument 1 passed to monken\TablesIgniter::setTable() must be an instance of CodeIgniter\Database\BaseBuilder, instance of CodeIgniter\Database\MySQLi\Result given, called in F:\xampp\htdocs\uralv3\app\Controllers\DeliverySuperAdmin.php on line 25
+#0 F:\xampp\htdocs\uralv3\app\Controllers\DeliverySuperAdmin.php(25): monken\TablesIgniter->setTable(Object(CodeIgniter\Database\MySQLi\Result))
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\DeliverySuperAdmin->fetch_invoice()
+#2 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliverySuperAdmin))
+#3 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-04-27 16:16:30 --> Must be requested by jQuery DataTables.
+#0 F:\xampp\htdocs\uralv3\app\Controllers\DeliverySuperAdmin.php(24): monken\TablesIgniter->__construct()
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\DeliverySuperAdmin->fetch_invoice()
+#2 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliverySuperAdmin))
+#3 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-04-27 16:17:46 --> Unknown column 'delivery_idDESC' in 'order clause'
+#0 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(330): mysqli->query('SELECT *\nFROM `...')
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1819): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 F:\xampp\htdocs\uralv3\vendor\monken\tablesigniter\src\TablesIgniter.php(171): CodeIgniter\Database\BaseBuilder->get()
+#5 F:\xampp\htdocs\uralv3\vendor\monken\tablesigniter\src\TablesIgniter.php(249): monken\TablesIgniter->getQuery()
+#6 F:\xampp\htdocs\uralv3\app\Controllers\DeliverySuperAdmin.php(48): monken\TablesIgniter->getDatatable()
+#7 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\DeliverySuperAdmin->fetch_invoice()
+#8 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliverySuperAdmin))
+#9 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2021-04-27 16:17:54 --> Must be requested by jQuery DataTables.
+#0 F:\xampp\htdocs\uralv3\app\Controllers\DeliverySuperAdmin.php(24): monken\TablesIgniter->__construct()
+#1 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\DeliverySuperAdmin->fetch_invoice()
+#2 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DeliverySuperAdmin))
+#3 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\xampp\htdocs\uralv3\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 F:\xampp\htdocs\uralv3\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('F:\\xampp\\htdocs...')
+#6 {main}
